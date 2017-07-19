@@ -1,0 +1,24 @@
+/* Container
+   ========================================================================== */
+
+/**
+ * 1. Empeche le bug du min-height dans IE 10-11.
+ */
+
+.page-body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* 1 */
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+/**
+ * 1. Empeche Chrome, Opera et Safari de laisser cet item être réduit plus que sa taille minimum.
+ */
+
+footer {
+    flex-shrink: 0; /* 1 */
+}

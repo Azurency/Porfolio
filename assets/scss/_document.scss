@@ -1,0 +1,29 @@
+@import '~assets/scss/_variables.scss';
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Change la police par défaut.
+ * 2. Corrige le line-height.
+ * 3. Active l'Antialising.
+ * 4. Met border-box comme Box-sizing par defaut.
+ * 5. Met le hauteur à 100% pour garder le footer en bas de page.
+ */
+
+html {
+    font-family: "sofia-pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+    font-size: 16px; /* 1 */
+    line-height: 1.5; /* 2 */
+    -moz-osx-font-smoothing: grayscale; /* 3 */
+    -webkit-font-smoothing: antialiased; /* 3 */
+    box-sizing: border-box; /* 4 */
+    height: 100%; /* 5 */
+    color: $text-color;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}

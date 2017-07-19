@@ -1,0 +1,11 @@
+/* Content
+   ========================================================================== */
+
+/**
+ * 1. Hérite la couleur du contexte actuel.
+ * 2. Supprime le style souligné.
+ */
+a {
+    color: inherit; /* 1 */
+    text-decoration: none; /* 2 */
+}
