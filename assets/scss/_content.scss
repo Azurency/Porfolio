@@ -9,3 +9,12 @@ a {
     color: inherit; /* 1 */
     text-decoration: none; /* 2 */
 }
+
+/**
+ * Supprime le list-style sur les liste de navigation.
+ */
+
+nav ol,
+nav ul {
+	list-style: none;
+}

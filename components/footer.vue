@@ -18,6 +18,7 @@
  * 1. Taille du texte réduite dans le footer.
  * 2. Réduit le padding sur téléphone, pour afficher plus.
  */
+ 
 .footer {
     padding: 2.5em .5em;
     text-align: center;

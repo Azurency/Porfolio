@@ -1,3 +1,13 @@
 <template>
-    <h1>Antoine Lassier</h1>
+    <index-header/>
 </template>
+
+<script>
+import IndexHeader from '~components/header.vue'
+
+export default {
+    components: {
+        IndexHeader
+    }
+}
+</script>
