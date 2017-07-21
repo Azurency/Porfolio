@@ -128,17 +128,13 @@ export default {
 /**
  * 1. Conteneur flex pour pouvoir placer la navbar et le texte.
  * 2. Occupe toute la hauteur possible.
- * 3. Centre le conteneur.
  */
 
 .index-header__container {
     display: flex; /* 1 */
     flex-direction: column;
     height: 100%; /* 2 */
-    margin-left: auto; /* 3 */
-    margin-right: auto; /* 3 */
     @include container;
-    
 }
 
 /**
