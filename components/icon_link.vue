@@ -1,7 +1,7 @@
 <template>
     <div class="icon-link">
         <span :style="{ color }" class="icon-link__icon"><slot name="icon"></slot></span>
-        <slot name="pre"></slot>
+        <span v-if="this.$slots.pre" class="icon-link__pre"><slot name="pre"></slot></span>
         <rounded-button 
             :text="this.buttonText" 
             :color="this.color"
@@ -55,7 +55,11 @@ export default {
 .icon-link {
     display: flex; /* 1 */
     align-items: center; /* 1 */
-    margin: .5em 0;
+    margin: 1em 0;
+}
+
+.icon-link__pre {
+    margin-right: .5em;
 }
 
 /**

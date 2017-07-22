@@ -28,7 +28,7 @@
                 Je suis disponible pour travailler avec vous, n'hésitez pas a me contacter.
             </icon-link>
         </section>
-        <section class="index-section" ref="projets">
+        <section class="index-section">
             <h3 class="index-section__title">Mon travail</h3>
             <block-projet title="G.A.R.I." color="rgba(150, 213, 87, 1.00)" link="#">
                 Création d'un logiciel de gestion de l'affectation de services à des véhicules pour les réseaux de transport.
@@ -50,6 +50,57 @@
                 Design d'un prototype d'application iOS et développement d'un version android pour un projet scolaire.
                 <img src="~assets/projet_dontbreakthechain.png" alt="Design de Don't break the chain" slot="image" height="100%">
             </block-projet>
+        </section>
+        <section class="index-section index-section--two-columns">
+            <div class="index-section__column">
+                <h3 class="index-section__title">Suivez moi</h3>
+                <icon-link color="#398EF3" buttonText="@azurency">
+                    <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
+                        <path fill="none" stroke="currentColor" stroke-width="1.5" d="M19,0.00864214135 C18.1729688,0.577465221 17.257275,1.01252361 16.2881818,1.29706319 C15.222765,0.102568705 13.505865,-0.316314228 11.9890704,0.248181875 C10.4722757,0.812677978 9.47823659,2.24047445 9.5,3.82337898 L9.5,4.66548425 C6.41739235,4.74342311 3.49947641,3.31135415 1.72727273,0.850747405 C1.72727273,0.850747405 -1.72727273,8.42969477 6.04545455,11.7981158 C4.26681926,12.9753506 2.14799915,13.5656353 0,13.4823264 C7.77272727,17.6928527 17.2727273,13.4823264 17.2727273,3.79811583 C17.271932,3.56355047 17.2488024,3.32956374 17.2036364,3.09916846 C18.0850664,2.25158368 18.7070782,1.18145291 19,0.00864214135 Z" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <template slot="pre">Sur twitter à</template>
+                </icon-link>
+                <icon-link color="#D15589" buttonText="mon github">
+                    <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20">
+                        <path fill="none" stroke="currentColor" stroke-width="1.5" d="M5.85919129,15.431848 C1.67405465,16.715924 1.67405465,13.2917214 0,12.8636961 M11.7183826,18 L11.7183826,14.687084 C11.7818988,13.8613352 11.4953074,13.0475014 10.9315769,12.4527918 C13.5598427,12.153174 16.3220329,11.1344738 16.3220329,6.46043718 C16.3218181,5.26524238 15.8722915,4.11588463 15.0664919,3.25024722 C15.4480557,2.20458695 15.4210768,1.04878402 14.9911594,0.022936257 C14.9911594,0.022936257 14.0034672,-0.276681472 11.7183826,1.28989123 C9.79992354,0.758131172 7.77765033,0.758131172 5.85919129,1.28989123 C3.57410669,-0.276681472 2.58641444,0.022936257 2.58641444,0.022936257 C2.15649712,1.04878402 2.12951816,2.20458695 2.51108198,3.25024722 C1.69927187,4.12230575 1.24928225,5.28205171 1.25554099,6.4861187 C1.25554099,11.1259132 4.01773117,12.1446135 6.64599698,12.4784733 C6.08905538,13.0670625 5.8030028,13.8700293 5.85919129,14.687084 L5.85919129,18" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <template slot="pre">Faites un tour sur</template>
+                </icon-link>
+                <icon-link color="#65C7C2" buttonText="mon linkedin">
+                    <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+                            <path stroke="currentColor" stroke-width="1.5" d="M2.04545455,0 C0.925312255,0 0,0.925312255 0,2.04545455 L0,15.9545455 C0,17.0746879 0.925312255,18 2.04545455,18 L15.9545455,18 C17.0746879,18 18,17.0746879 18,15.9545455 L18,2.04545455 C18,0.925312255 17.0746879,0 15.9545455,0 L2.04545455,0 Z" />
+                            <path fill="currentColor" d="M4.44886364 3.04261364C3.67159091 3.04261364 3.04261364 3.67240909 3.04261364 4.44886364 3.04261364 5.22531818 3.67077273 5.85511364 4.44886364 5.85511364 5.2245 5.85511364 5.85511364 5.22531818 5.85511364 4.44886364 5.85511364 3.67322727 5.2245 3.04261364 4.44886364 3.04261364zM11.8380682 6.77556818C10.6639773 6.77556818 9.88486364 7.41804545 9.5625 8.02840909L9.51136364 8.02840909 9.51136364 6.95454545 7.21022727 6.95454545 7.21022727 14.7272727 9.61363636 14.7272727 9.61363636 10.8920455C9.61363636 9.87913636 9.81511364 8.89772727 11.0710227 8.89772727 12.3089318 8.89772727 12.3238636 10.0423636 12.3238636 10.9431818L12.3238636 14.7272727 14.7272727 14.7272727 14.7272727 10.4573864C14.7272727 8.36611364 14.2819773 6.77556818 11.8380682 6.77556818z" />
+                            <polygon fill="currentColor" points="3.273 6.955 3.273 14.727 5.702 14.727 5.702 6.955" />
+                        </g>
+                    </svg>
+                    <template slot="pre">Ou sur</template>
+                    , c'est plus corporate
+                </icon-link>
+            </div>
+            <div class="index-section__column">
+                <h3 class="index-section__title">À propos de moi</h3>
+                <p class="index-section__paragraph">
+                    Je suis Antoine, né à Orléans en France. J'ai 22 ans et suis en dernière année de
+                    <b>Master MIAGE</b> à l'Université d'Orléans.
+                    <br><br>Je suis un
+                    <b>developpeur full-stack</b> et un
+                    <b>designer</b>. Je maitrise un grand nombre de technologies et méthodologies pour construire des sites web et des applications
+                    <b>les mieux adaptés</b> à tous les besoins.
+                </p>
+                <br>
+                <icon-link color="#96D557" buttonText="mon CV">
+                    <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20">
+                        <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8.75,0 L1.75,0 C0.783501688,0 0,0.80588745 0,1.8 L0,16.2 C0,17.1941125 0.783501688,18 1.75,18 L12.25,18 C13.2164983,18 14,17.1941125 14,16.2 L14,5.4 L8.75,0 Z" />
+                            <polyline points="8.75 0 8.75 5.4 14 5.4" />
+                            <path d="M10.5 9.9L3.5 9.9M10.5 13.5L3.5 13.5" />
+                            <polyline points="5.25 6.3 4.375 6.3 3.5 6.3" />
+                        </g>
+                    </svg>
+                    <template slot="pre">Vous pouvez aussi télécharger</template>
+                </icon-link>
+            </div>
         </section>
     </div>
 </template>
@@ -78,6 +129,35 @@ export default {
     @include container;
     margin-top: 5em;
 
+    &--two-columns {
+        display: flex;
+        flex-direction: row;
+
+        & .index-section__column:first-child {
+            margin-right: $container-outside-gutter*2;
+        }
+
+        & .index-section__column:last-child {
+            margin-left: $container-outside-gutter*2;
+        }
+
+        @include respond-to($phone) {
+            flex-direction: column;
+
+            & .index-section__column:first-child {
+                margin: 0;
+            }
+
+            & .index-section__column:last-child {
+                margin: 0;
+            }
+        }
+    }
+
+    &__column {
+        flex: 1 1 50%;
+    }
+
     /**
     * 1. En gras.
     * 2. Ajoute un espace entre la bordure et le titre.
@@ -92,6 +172,15 @@ export default {
         padding-bottom: 5px; /* 2 */
         border-bottom: 2px solid $title-border-bottom-color;
         margin: 0 0 1em 0;
+    }
+
+    &__paragraph {
+        margin: 0;
+
+        b {
+            font-weight: 700;
+            color: $dark-text;
+        }
     }
 }
 </style>
