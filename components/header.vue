@@ -170,6 +170,7 @@ export default {
 .index-header__iam {
     color: $dark-text;
     font-size: 48px;
+    letter-spacing: -1.5px;
     margin: 0;
     @include respond-to($phone) {
         font-size: 34px;

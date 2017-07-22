@@ -87,6 +87,7 @@ export default {
         font-family: "europa", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         font-size: 26px;
         font-weight: 700; /* 1 */
+        letter-spacing: -1px;
         color: $dark-text;
         padding-bottom: 5px; /* 2 */
         border-bottom: 2px solid $title-border-bottom-color;
