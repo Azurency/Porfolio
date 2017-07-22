@@ -44,6 +44,7 @@ export default {
 
 <style lang="scss">
 @import '~assets/scss/_variables.scss';
+
 /* Icon Link
    ========================================================================== */
 

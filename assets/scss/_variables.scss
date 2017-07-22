@@ -7,6 +7,7 @@ $soft-grey: rgba(183, 188, 195, 1.00);
 $header-gradient-color:  rgba(240, 246, 255, 1.00);
 $header-gradient-color-end:  rgba(240, 246, 255, 0.00);
 $title-border-bottom-color: rgba(0, 0, 0, .05);
+$white: rgba(255, 255, 255, 1.0);
 
 /* Transitions
    ========================================================================== */
@@ -48,4 +49,7 @@ $retina: '(min--moz-device-pixel-ratio: 1.5),
     padding: 0 $container-outside-gutter;
     margin-left: auto; /* 3 */
     margin-right: auto; /* 3 */
+    @include respond-to($phone) {
+        padding: 0 $container-outside-gutter/2;
+    }
 }
