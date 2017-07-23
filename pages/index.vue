@@ -75,7 +75,7 @@
                         </g>
                     </svg>
                     <template slot="pre">Ou sur</template>
-                    , c'est plus corporate
+                    <span class="not-mobile">, c'est plus corporate</span>
                 </icon-link>
             </div>
             <div class="index-section__column">
@@ -98,7 +98,7 @@
                             <polyline points="5.25 6.3 4.375 6.3 3.5 6.3" />
                         </g>
                     </svg>
-                    <template slot="pre">Vous pouvez aussi télécharger</template>
+                    <template slot="pre"><span class="not-mobile">Vous pouvez aussi télécharger</span><span class="mobile-only">Téléchargez</span></template>
                 </icon-link>
             </div>
         </section>

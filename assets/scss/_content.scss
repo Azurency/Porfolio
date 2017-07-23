@@ -18,3 +18,16 @@ nav ol,
 nav ul {
 	list-style: none;
 }
+
+.mobile-only {
+    display: none;
+    @include respond-to($phone) { 
+        display: initial;
+    }
+}
+
+.not-mobile {
+    @include respond-to($phone) { 
+        display: none;
+    }
+}

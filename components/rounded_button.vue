@@ -45,7 +45,12 @@ export default {
 /* Rounded Button
    ========================================================================== */
 
+/**
+* 1. Inline-block pour que le padding soit pris en compte dans la hauteur.
+*/
+
 .rounded-button {
+    display: inline-block; /* 1 */
     background-color: $soft-grey;
     border-radius: 15px;
     padding: 4px 10px;
