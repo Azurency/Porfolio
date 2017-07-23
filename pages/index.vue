@@ -102,6 +102,22 @@
                 </icon-link>
             </div>
         </section>
+        <section class="contact-section">
+            <div class="index-section index-section--center">
+                <h5 class="index-section__leadtitle">DISPONIBLE EN FREELANCE</h5>
+                <h3 class="index-section__title index-section__title--borderless">Envie de travailler avec moi ?<br>Je suis toujours intéréssé par de nouveau projets.</h3>
+                <call-button text="Conctactez moi" link="#" color="#398EF3">
+                    <template slot="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+                            <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2,0 L18,0 C19.1,0 20,0.9 20,2 L20,14 C20,15.1 19.1,16 18,16 L2,16 C0.9,16 0,15.1 0,14 L0,2 C0,0.9 0.9,0 2,0 Z"/>
+                                <polyline points="20 2 10 9 0 2"/>
+                            </g>
+                        </svg>
+                    </template>
+                </call-button>
+            </div>
+        </section>
     </div>
 </template>
 
@@ -109,12 +125,14 @@
 import IndexHeader from '~components/header.vue'
 import IconLink from '~components/icon_link.vue'
 import BlockProjet from '~components/bloc_projet.vue'
+import CallButton from '~components/call_action_button.vue'
 
 export default {
     components: {
         IndexHeader,
         IconLink,
-        BlockProjet
+        BlockProjet,
+        CallButton
     }
 }
 </script>
@@ -154,6 +172,10 @@ export default {
         }
     }
 
+    &--center {
+        text-align: center;
+    }
+
     &__column {
         flex: 1 1 50%;
     }
@@ -172,6 +194,18 @@ export default {
         padding-bottom: 5px; /* 2 */
         border-bottom: 2px solid $title-border-bottom-color;
         margin: 0 0 1em 0;
+
+        &--borderless {
+            border: 0;
+        }
+    }
+
+    &__leadtitle {
+        text-transform: uppercase;
+        color: $soft-grey;
+        font-weight: 500;
+        font-size: 14px;
+        margin: 1em 0;
     }
 
     &__paragraph {
@@ -183,4 +217,10 @@ export default {
         }
     }
 }
+
+.contact-section {
+    height: 300px;
+    background: linear-gradient($header-gradient-color-end, $header-gradient-color);
+}
+
 </style>
