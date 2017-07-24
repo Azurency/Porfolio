@@ -104,7 +104,7 @@
         </section>
         <section class="contact-section">
             <div class="index-section index-section--center">
-                <h5 class="index-section__leadtitle">DISPONIBLE EN FREELANCE</h5>
+                <h5 class="index-section__leadtitle">Disponible en freelance</h5>
                 <h3 class="index-section__title index-section__title--borderless">Envie de travailler avec moi ?<br>Je suis toujours intéréssé par de nouveau projets.</h3>
                 <call-button text="Conctactez moi" link="#" color="#398EF3">
                     <template slot="icon">
@@ -118,6 +118,65 @@
                 </call-button>
             </div>
         </section>
+        <section class="index-section index-section--center">
+            <h5 class="index-section__leadtitle">Quelques infos très utiles avant de partir</h5>
+            <div class="stat-section">
+                <stat-block title="Photos prises" color="#FF934F" class="stat-section__item">
+                    <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="44" height="37" viewBox="0 0 44 37">
+                        <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="3" transform="translate(2 2)" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M40,29.3333333 C40,31.3583774 38.3719445,33 36.3636364,33 L3.63636364,33 C1.62805546,33 4.03717464e-16,31.3583774 0,29.3333333 L0,9.16666667 C-2.01858732e-16,7.14162258 1.62805546,5.5 3.63636364,5.5 L10.9090909,5.5 L14.5454545,0 L25.4545455,0 L29.0909091,5.5 L36.3636364,5.5 C38.3719445,5.5 40,7.14162258 40,9.16666667 L40,29.3333333 Z"/>
+                            <ellipse cx="20" cy="18.333" rx="7.273" ry="7.333"/>
+                        </g>
+                    </svg>
+                    21 472
+                </stat-block>
+                <stat-block title="Commits" color="#65C7C2" class="stat-section__item">
+                    <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+                        <g fill="none" fill-rule="evenodd" stroke="currentColor" transform="translate(2 2)">
+                            <rect width="40" height="16" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" rx="4"/>
+                            <rect width="40" height="16" y="24" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" rx="4"/>
+                            <circle cx="9" cy="9" r="1" stroke-width="2"/>
+                            <circle cx="9" cy="33" r="1" stroke-width="2"/>
+                        </g>
+                    </svg>
+                    835
+                </stat-block>
+                <stat-block title="Musique" color="#96D557" class="stat-section__item">
+                    <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+                        <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="3" transform="translate(2 2)" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M13.3333333,31.1111111 L4.44444444,31.1111111 C1.98984556,31.1111111 0,33.1009567 0,35.5555556 C0,38.0101544 1.98984556,40 4.44444444,40 L8.88888889,40 C11.3434878,40 13.3333333,38.0101544 13.3333333,35.5555556 L13.3333333,31.1111111 Z M40,26.6666667 L31.1111111,26.6666667 C28.6565122,26.6666667 26.6666667,28.6565122 26.6666667,31.1111111 C26.6666667,33.56571 28.6565122,35.5555556 31.1111111,35.5555556 L35.5555556,35.5555556 C38.0101544,35.5555556 40,33.56571 40,31.1111111 L40,26.6666667 Z"/>
+                            <polyline points="13.333 31.111 13.333 4.444 40 0 40 26.667"/>
+                        </g>
+                    </svg>
+                    Halsey
+                    <br>La Femme
+                    <br>MØ, Sia
+                    <br>...
+                </stat-block>
+                <stat-block title="Séries préférées" color="#D15589" class="stat-section__item">
+                    <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40">
+                        <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="3" transform="translate(2 2)" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="40" height="28" rx="4"/>
+                            <path d="M12 36L28 36M20 28L20 36"/>
+                        </g>
+                    </svg>
+                    Fringe (the observers 🕵️)
+                    <br>Sherlock
+                    <br>Halt & Catch Fire
+                    <br>...
+                </stat-block>
+                <stat-block title="Lignes de code" color="#398EF3" class="stat-section__item">
+                    <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="36" height="44" viewBox="0 0 36 44">
+                        <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="3" transform="translate(2 2)" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20,0 L4,0 C1.790861,0 0,1.790861 0,4 L0,36 C0,38.209139 1.790861,40 4,40 L28,40 C30.209139,40 32,38.209139 32,36 L32,12 L20,0 Z"/>
+                            <polyline points="20 0 20 12 32 12"/>
+                            <path d="M16 32L16 20M10 26L22 26"/>
+                        </g>
+                    </svg>
+                    1 543 000
+                </stat-block>
+            </div>
+        </section>
     </div>
 </template>
 
@@ -126,13 +185,15 @@ import IndexHeader from '~components/header.vue'
 import IconLink from '~components/icon_link.vue'
 import BlockProjet from '~components/bloc_projet.vue'
 import CallButton from '~components/call_action_button.vue'
+import StatBlock from '~components/stat_block.vue'
 
 export default {
     components: {
         IndexHeader,
         IconLink,
         BlockProjet,
-        CallButton
+        CallButton,
+        StatBlock
     }
 }
 </script>
@@ -221,6 +282,33 @@ export default {
 .contact-section {
     height: 300px;
     background: linear-gradient($header-gradient-color-end, $header-gradient-color);
+}
+
+.stat-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 3em 0;
+
+    @include respond-to($tablet-portrait) {
+        justify-content: flex-start;
+        margin: 2em 0;
+
+        &__item {
+            flex: 0 0 33%;
+            margin: .5em 0;
+        }
+    }
+
+    @include respond-to($phone) {
+        justify-content: flex-start;
+        margin: 2em 0;
+
+        &__item {
+            flex: 0 0 50%;
+            margin: .5em 0;
+        }
+    }
 }
 
 </style>
