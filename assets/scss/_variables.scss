@@ -20,6 +20,7 @@ $container-outside-gutter: 2em;
 /* Media Query
    ========================================================================== */
 $phone: '(max-width: 480px)';
+$phone-landscape: '(min-width : 481px) and (max-width : 766px) ';
 $tablet-portrait: '(max-width: 767px)';
 $tablet-landscape: '(min-width: 768px) and (max-width: 979px)';
 $large-desktop: '(min-width: 1200px)';

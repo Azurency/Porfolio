@@ -89,6 +89,9 @@ export default {
         @include respond-to($phone) {
             margin-top: .5em; /* 1 */
         }
+        @include respond-to($phone-landscape) {
+            flex: 1 1 100%;
+        }
     }
 
     /**
@@ -109,6 +112,11 @@ export default {
         */
         @include respond-to($phone) { 
             margin: 6px 0 0 0; /* 1 */
+            align-self: flex-start; /* 1 */
+        }
+
+        @include respond-to($phone-landscape) {
+            margin-top: 6px;
             align-self: flex-start; /* 1 */
         }
     }

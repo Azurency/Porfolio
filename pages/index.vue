@@ -231,6 +231,16 @@ export default {
                 margin: 0;
             }
         }
+
+        @media only screen and (max-width: 979px) {
+            & .index-section__column:first-child {
+                margin-right: $container-outside-gutter/2;
+            }
+
+            & .index-section__column:last-child {
+                margin-left: $container-outside-gutter/2;
+            }
+        }
     }
 
     &--center {
