@@ -3,7 +3,7 @@
         <index-header/>
         <section class="index-section">
             <h3 class="index-section__title">Actuellement</h3>
-            <icon-link color="#FF934F" buttonText="G.A.R.I.">
+            <icon-link color="#F68E69" buttonText="G.A.R.I.">
                 <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
                     <g fill="none" fill-rule="evenodd" stroke="currentColor" transform="translate(1)">
                         <rect width="14.144" height="15.06" x="2.928" y=".75" stroke-width="1.5" rx="3.6" />
@@ -18,7 +18,7 @@
                 </svg>
                 Un logiciel de d'affectation de services à des véhicules en respectant des contraintes.
             </icon-link>
-            <icon-link color="#398EF3" buttonText="Freelance">
+            <icon-link color="rgba(116, 155, 209, 1.00)" buttonText="Freelance">
                 <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
                     <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round">
                         <rect width="18" height="12.444" y="3.556" rx="1.778" />
@@ -54,19 +54,19 @@
         <section class="index-section index-section--two-columns">
             <div class="index-section__column">
                 <h3 class="index-section__title">Suivez moi</h3>
-                <icon-link color="#398EF3" buttonText="@azurency">
+                <icon-link color="rgba(116, 155, 209, 1.00)" buttonText="@azurency">
                     <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
                         <path fill="none" stroke="currentColor" stroke-width="1.5" d="M19,0.00864214135 C18.1729688,0.577465221 17.257275,1.01252361 16.2881818,1.29706319 C15.222765,0.102568705 13.505865,-0.316314228 11.9890704,0.248181875 C10.4722757,0.812677978 9.47823659,2.24047445 9.5,3.82337898 L9.5,4.66548425 C6.41739235,4.74342311 3.49947641,3.31135415 1.72727273,0.850747405 C1.72727273,0.850747405 -1.72727273,8.42969477 6.04545455,11.7981158 C4.26681926,12.9753506 2.14799915,13.5656353 0,13.4823264 C7.77272727,17.6928527 17.2727273,13.4823264 17.2727273,3.79811583 C17.271932,3.56355047 17.2488024,3.32956374 17.2036364,3.09916846 C18.0850664,2.25158368 18.7070782,1.18145291 19,0.00864214135 Z" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                     <template slot="pre">Sur twitter à</template>
                 </icon-link>
-                <icon-link color="#D15589" buttonText="mon github">
+                <icon-link color="#DC6C97" buttonText="mon github">
                     <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20">
                         <path fill="none" stroke="currentColor" stroke-width="1.5" d="M5.85919129,15.431848 C1.67405465,16.715924 1.67405465,13.2917214 0,12.8636961 M11.7183826,18 L11.7183826,14.687084 C11.7818988,13.8613352 11.4953074,13.0475014 10.9315769,12.4527918 C13.5598427,12.153174 16.3220329,11.1344738 16.3220329,6.46043718 C16.3218181,5.26524238 15.8722915,4.11588463 15.0664919,3.25024722 C15.4480557,2.20458695 15.4210768,1.04878402 14.9911594,0.022936257 C14.9911594,0.022936257 14.0034672,-0.276681472 11.7183826,1.28989123 C9.79992354,0.758131172 7.77765033,0.758131172 5.85919129,1.28989123 C3.57410669,-0.276681472 2.58641444,0.022936257 2.58641444,0.022936257 C2.15649712,1.04878402 2.12951816,2.20458695 2.51108198,3.25024722 C1.69927187,4.12230575 1.24928225,5.28205171 1.25554099,6.4861187 C1.25554099,11.1259132 4.01773117,12.1446135 6.64599698,12.4784733 C6.08905538,13.0670625 5.8030028,13.8700293 5.85919129,14.687084 L5.85919129,18" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                     <template slot="pre">Faites un tour sur</template>
                 </icon-link>
-                <icon-link color="#65C7C2" buttonText="mon linkedin">
+                <icon-link color="#74C4CC" buttonText="mon linkedin">
                     <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                         <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
                             <path stroke="currentColor" stroke-width="1.5" d="M2.04545455,0 C0.925312255,0 0,0.925312255 0,2.04545455 L0,15.9545455 C0,17.0746879 0.925312255,18 2.04545455,18 L15.9545455,18 C17.0746879,18 18,17.0746879 18,15.9545455 L18,2.04545455 C18,0.925312255 17.0746879,0 15.9545455,0 L2.04545455,0 Z" />
