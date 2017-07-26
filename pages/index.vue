@@ -60,7 +60,7 @@
                     </svg>
                     <template slot="pre">Sur twitter à</template>
                 </icon-link>
-                <icon-link color="#DC6C97" buttonText="mon github">
+                <icon-link color="#E0779F" buttonText="mon github">
                     <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20">
                         <path fill="none" stroke="currentColor" stroke-width="1.5" d="M5.85919129,15.431848 C1.67405465,16.715924 1.67405465,13.2917214 0,12.8636961 M11.7183826,18 L11.7183826,14.687084 C11.7818988,13.8613352 11.4953074,13.0475014 10.9315769,12.4527918 C13.5598427,12.153174 16.3220329,11.1344738 16.3220329,6.46043718 C16.3218181,5.26524238 15.8722915,4.11588463 15.0664919,3.25024722 C15.4480557,2.20458695 15.4210768,1.04878402 14.9911594,0.022936257 C14.9911594,0.022936257 14.0034672,-0.276681472 11.7183826,1.28989123 C9.79992354,0.758131172 7.77765033,0.758131172 5.85919129,1.28989123 C3.57410669,-0.276681472 2.58641444,0.022936257 2.58641444,0.022936257 C2.15649712,1.04878402 2.12951816,2.20458695 2.51108198,3.25024722 C1.69927187,4.12230575 1.24928225,5.28205171 1.25554099,6.4861187 C1.25554099,11.1259132 4.01773117,12.1446135 6.64599698,12.4784733 C6.08905538,13.0670625 5.8030028,13.8700293 5.85919129,14.687084 L5.85919129,18" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
@@ -121,7 +121,7 @@
         <section class="index-section index-section--center">
             <h5 class="index-section__leadtitle">Quelques infos très utiles avant de partir</h5>
             <div class="stat-section">
-                <stat-block title="Photos prises" color="#FF934F" class="stat-section__item">
+                <stat-block title="Photos prises" color="#F68E69" class="stat-section__item">
                     <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="44" height="37" viewBox="0 0 44 37">
                         <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="3" transform="translate(2 2)" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M40,29.3333333 C40,31.3583774 38.3719445,33 36.3636364,33 L3.63636364,33 C1.62805546,33 4.03717464e-16,31.3583774 0,29.3333333 L0,9.16666667 C-2.01858732e-16,7.14162258 1.62805546,5.5 3.63636364,5.5 L10.9090909,5.5 L14.5454545,0 L25.4545455,0 L29.0909091,5.5 L36.3636364,5.5 C38.3719445,5.5 40,7.14162258 40,9.16666667 L40,29.3333333 Z"/>
@@ -130,7 +130,7 @@
                     </svg>
                     21 472
                 </stat-block>
-                <stat-block title="Commits" color="#65C7C2" class="stat-section__item">
+                <stat-block title="Commits" color="#A5E6ED" class="stat-section__item">
                     <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
                         <g fill="none" fill-rule="evenodd" stroke="currentColor" transform="translate(2 2)">
                             <rect width="40" height="16" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" rx="4"/>
@@ -141,7 +141,7 @@
                     </svg>
                     835
                 </stat-block>
-                <stat-block title="Musique" color="#96D557" class="stat-section__item">
+                <stat-block title="Musique" color="#BAEA8A" class="stat-section__item">
                     <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
                         <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="3" transform="translate(2 2)" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M13.3333333,31.1111111 L4.44444444,31.1111111 C1.98984556,31.1111111 0,33.1009567 0,35.5555556 C0,38.0101544 1.98984556,40 4.44444444,40 L8.88888889,40 C11.3434878,40 13.3333333,38.0101544 13.3333333,35.5555556 L13.3333333,31.1111111 Z M40,26.6666667 L31.1111111,26.6666667 C28.6565122,26.6666667 26.6666667,28.6565122 26.6666667,31.1111111 C26.6666667,33.56571 28.6565122,35.5555556 31.1111111,35.5555556 L35.5555556,35.5555556 C38.0101544,35.5555556 40,33.56571 40,31.1111111 L40,26.6666667 Z"/>
@@ -153,7 +153,7 @@
                     <br>MØ, Sia
                     <br>...
                 </stat-block>
-                <stat-block title="Séries préférées" color="#D15589" class="stat-section__item">
+                <stat-block title="Séries préférées" color="#E0779F" class="stat-section__item">
                     <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40">
                         <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="3" transform="translate(2 2)" stroke-linecap="round" stroke-linejoin="round">
                             <rect width="40" height="28" rx="4"/>
@@ -165,7 +165,7 @@
                     <br>Halt & Catch Fire
                     <br>...
                 </stat-block>
-                <stat-block title="Lignes de code" color="#398EF3" class="stat-section__item">
+                <stat-block title="Lignes de code" color="#9DCDF3" class="stat-section__item">
                     <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="36" height="44" viewBox="0 0 36 44">
                         <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="3" transform="translate(2 2)" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M20,0 L4,0 C1.790861,0 0,1.790861 0,4 L0,36 C0,38.209139 1.790861,40 4,40 L28,40 C30.209139,40 32,38.209139 32,36 L32,12 L20,0 Z"/>
