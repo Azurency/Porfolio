@@ -30,23 +30,23 @@
         </section>
         <section class="index-section">
             <h3 class="index-section__title">Mon travail</h3>
-            <block-projet title="G.A.R.I." color="rgba(150, 213, 87, 1.00)" link="#">
+            <block-projet title="G.A.R.I." color="rgba(165, 230, 237, 1.00)" link="#">
                 Création d'un logiciel de gestion de l'affectation de services à des véhicules pour les réseaux de transport.
                 <img src="~assets/projet_gari.png" alt="Capture G.A.R.I. v1.5" slot="image" height="100%">
             </block-projet>
-            <block-projet title="Macollec-capsule" color="rgba(57, 142, 243, 1.00)" link="#">
+            <block-projet title="Macollec-capsule" color="rgba(246, 142, 105, 1.00)" link="#">
                 Réalisation du design d'un site de gestion d'une collection de capsules de champagne.
                 <img src="~assets/projet_macollec.png" alt="Capture Macollec-Capsule" slot="image" height="100%">
             </block-projet>
-            <block-projet title="Roadtrip blog" color="rgba(188, 188, 188, 1.00)" link="#">
+            <block-projet title="Roadtrip blog" color="rgba(157, 205, 243, 1.00)" link="#">
                 À l'occasion d'un roadtrip en Angletterre, j'ai mis en place en blog pour garder une trace de mon voyage.
                 <img src="~assets/projet_roadtrip.png" alt="Illustration self-portrait et capture article" slot="image" height="100%">
             </block-projet>
-            <block-projet title="Handball team manager" color="rgba(101, 199, 194, 1.00)" link="#">
+            <block-projet title="Handball team manager" color="rgba(186, 234, 138, 1.00)" link="#">
                 Lors d'un projet d'étude, j'ai créer un logiciel de gestion d'un championat de handball.
                 <img src="~assets/projet_handball.png" alt="Captures Handball Manager" slot="image" height="100%">
             </block-projet>
-            <block-projet title="Don't break the chain" color="rgba(209, 85, 137, 1.00)" link="#">
+            <block-projet title="Don't break the chain" color="rgba(216, 209, 218, 1.00)" link="#">
                 Design d'un prototype d'application iOS et développement d'un version android pour un projet scolaire.
                 <img src="~assets/projet_dontbreakthechain.png" alt="Design de Don't break the chain" slot="image" height="100%">
             </block-projet>

@@ -39,7 +39,7 @@ export default {
     },
     computed: {
         linkColor () {
-            return Color(this.color).rotate(20).saturate(0.3).darken(0.4)
+            return Color(this.color).rotate(10).darken(0.4).desaturate(0.3)
         }
     }
 }
