@@ -1,12 +1,25 @@
 <template>
     <nav>
-        <ul class="nav">
+        <ul class="nav" :class="{ 'nav--colored': colored }">
             <li class="nav__item"><a href="" class="nav__link">Accueil</a></li>
             <li class="nav__item"><a href="" class="nav__link">Travail</a></li>
             <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
         </ul>
     </nav>
 </template>
+
+<script>
+export default {
+    props: {
+        colored: {
+            type: Boolean,
+            required: false,
+            default: false
+        }
+    }
+}
+</script>
+
 
 <style lang="scss">
 @import '~assets/scss/_variables.scss';
@@ -17,24 +30,29 @@
 .nav {
     margin: 0;
     padding: 0;
-}
-
-/**
- * 1. Places les items sur la meme ligne.
- */
-
-.nav__item {
-    display: inline-block; /* 1 */
-    margin: 0 .8em;
-    font-size: 14px;
-}
-
-.nav__link {
     color: $nav-grey;
-    transition: color $default-transition-duration;
 
-    &:hover {
-        color: $dark-text;
+    /**
+    * 1. Places les items sur la meme ligne.
+    */
+
+    &__item {
+        display: inline-block; /* 1 */
+        margin: 0 .8em;
+        font-size: 14px;
+    }
+
+    &__link {
+        color: inherit;
+        transition: color $default-transition-duration;
+
+        &:hover {
+            color: $dark-text;
+        }
+    }
+
+    &--colored {
+        color: $fountain-blue;
     }
 }
 </style>
