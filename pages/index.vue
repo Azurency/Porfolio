@@ -106,7 +106,7 @@
             <div class="index-section index-section--center">
                 <h5 class="index-section__leadtitle">Disponible en freelance</h5>
                 <h3 class="index-section__title index-section__title--borderless">Envie de travailler avec moi ?<br>Je suis toujours intéréssé par de nouveau projets.</h3>
-                <call-button text="Conctactez moi" link="#" color="#398EF3">
+                <call-button text="Conctactez moi" link="#" color="#3291CB">
                     <template slot="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
                             <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round">
@@ -116,6 +116,41 @@
                         </svg>
                     </template>
                 </call-button>
+            </div>
+            <div class="contact-section__shape1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="137" height="259" viewBox="0 0 137 259">
+                    <defs>
+                        <linearGradient id="a" x1="75.915%" x2="15.454%" y1="16.371%" y2="74.294%">
+                        <stop stop-color="#FFFFFF" offset="0%"/>
+                        <stop stop-color="#216E96" offset="100%"/>
+                        </linearGradient>
+                    </defs>
+                    <g fill="none" fill-rule="evenodd">
+                        <circle cx="100.504" cy="68.504" r="68.504" fill="#BAEA8A"/>
+                        <circle cx="50.197" cy="112.197" r="50.197" fill="url(#a)" style="mix-blend-mode:screen"/>
+                        <path stroke="#CAE8F0" stroke-width="10" d="M86.2845427,201.465372 C54.584951,196.910147 38.7351552,211.699314 38.7351552,245.832872" transform="rotate(-36 62.51 223.247)"/>
+                    </g>
+                </svg>
+            </div>
+            <div class="contact-section__shape2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="180" height="290" viewBox="0 0 180 290">
+                    <defs>
+                        <linearGradient id="a" x1="1.634%" y1="50%" y2="50%">
+                        <stop stop-color="#ED4868" offset="0%"/>
+                        <stop stop-color="#ED4868" stop-opacity=".287" offset="100%"/>
+                        </linearGradient>
+                        <linearGradient id="b" x1="15.435%" x2="136.867%" y1="100%" y2="0%">
+                        <stop stop-color="#FFFFFF" offset="0%"/>
+                        <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"/>
+                        </linearGradient>
+                    </defs>
+                    <g fill="none" fill-rule="evenodd" transform="translate(-86 3)">
+                        <circle cx="103.2" cy="212.2" r="103.2" fill="#9DCDF3"/>
+                        <rect width="77" height="77" x="169" y="174" fill="url(#a)" opacity=".8"/>
+                        <path stroke="url(#b)" stroke-width="5" d="M116,69.8610948 C117.978859,38.4278017 128.621785,22.4070715 147.92878,21.7989042 C167.235774,21.190737 181.705215,33.147243 191.337102,57.6684223 C184.245934,13.4636173 194.316195,-5.32782404 221.547886,1.29409836" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path stroke="#170F01" stroke-width="5" d="M123.5,163.5 L261.793167,25.2068331" style="mix-blend-mode:difference" stroke-linecap="square"/>
+                    </g>
+                </svg>
             </div>
         </section>
         <section class="index-section index-section--center">
@@ -273,10 +308,10 @@ export default {
 
     &__leadtitle {
         text-transform: uppercase;
-        color: $soft-grey;
+        color: $contact-leadtitle;
         font-weight: 500;
         font-size: 14px;
-        margin: 1em 0;
+        margin: 0  0 1em 0;
     }
 
     &__paragraph {
@@ -290,8 +325,42 @@ export default {
 }
 
 .contact-section {
-    height: 300px;
-    background: linear-gradient($header-gradient-color-end, $header-gradient-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em;
+    height: 350px;
+    background: $iceberg;
+    position: relative;
+
+    & .index-section {
+        margin: 0;
+        z-index: 10;
+    }
+
+    &__shape1 {
+        position: absolute;
+        right: 0;
+        top: 25px;
+        height: 259px;
+    }
+
+    &__shape2 {
+        position: absolute;
+        height: 290px;
+        left: 0;
+        bottom: 0;
+    }
+
+    @include respond-to($phone) {
+        &__shape1 {
+            right: -80px;
+        }
+
+        &__shape2 {
+            left: -80px;
+        }
+    }
 }
 
 .stat-section {
