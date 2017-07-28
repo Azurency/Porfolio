@@ -3,7 +3,9 @@
         class="rounded-button" 
         @click="emitClick" 
         v-text="this.text"
-        :style="{ backgroundColor: fadedColor, color }">
+        :style="{ backgroundColor: fadedColor, color: textColor }"
+        @mouseover="isHover=true"
+        @mouseout="isHover=false">
     </a>
 </template>
 
@@ -26,9 +28,20 @@ export default {
             required: true
         }
     },
+    data () {
+        return {
+            isHover: false,
+            computedFadedColor: Color(this.color).alpha(0.1).string(),
+            computedFadedColorHover: Color(this.color).alpha(0.2).saturate(0.2).string(),
+            computedHoverColor: Color(this.color).darken(0.2).string()
+        }
+    },
     computed: {
         fadedColor () {
-            return Color(this.color).alpha('0.1').string()
+            return this.isHover ? this.computedFadedColorHover : this.computedFadedColor
+        },
+        textColor () {
+            return this.isHover ? this.computedHoverColor : this.color
         }
     },
     methods: {
@@ -52,8 +65,9 @@ export default {
 .rounded-button {
     display: inline-block; /* 1 */
     background-color: $soft-grey;
-    border-radius: 15px;
+    border-radius: $rounded-button-radius;
     padding: 4px 10px;
+    transition: background-color $default-transition-duration, color $default-transition-duration;
 
     &--space-right {
         margin-right: .5em;
