@@ -67,7 +67,7 @@ export default {
     background-color: $soft-grey;
     border-radius: $rounded-button-radius;
     padding: 4px 10px;
-    transition: background-color $default-transition-duration, color $default-transition-duration;
+    transition: background-color $default-transition-duration ease-out, color $default-transition-duration ease-out;
 
     &--space-right {
         margin-right: .5em;

@@ -46,7 +46,7 @@
                 Lors d'un projet d'étude, j'ai créer un logiciel de gestion d'un championat de handball.
                 <img src="~assets/projet_handball.png" alt="Captures Handball Manager" slot="image" height="100%">
             </block-projet>
-            <block-projet title="Don't break the chain" color="rgba(216, 209, 218, 1.00)" link="#">
+            <block-projet title="Don't break the chain" color="rgba(218, 212, 209, 1.00)" link="#">
                 Design d'un prototype d'application iOS et développement d'un version android pour un projet scolaire.
                 <img src="~assets/projet_dontbreakthechain.png" alt="Design de Don't break the chain" slot="image" height="100%">
             </block-projet>
@@ -106,7 +106,7 @@
             <div class="index-section index-section--center">
                 <h5 class="index-section__leadtitle">Disponible en freelance</h5>
                 <h3 class="index-section__title index-section__title--borderless">Envie de travailler avec moi ?<br>Je suis toujours intéréssé par de nouveau projets.</h3>
-                <call-button text="Conctactez moi" link="#" color="#3291CB">
+                <call-button text="Conctactez moi" link="#" color="#2588C4">
                     <template slot="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
                             <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round">

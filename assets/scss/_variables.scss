@@ -18,6 +18,8 @@ $contact-leadtitle: rgba(141, 156, 176, 1.00);
 $default-transition-duration: .375s;
 $longer-transition-duration: .5s;
 
+$fast-bezier: cubic-bezier(.07,.96,.57,.91);
+
 /* Gutters
    ========================================================================== */
 $container-outside-gutter: 2em;

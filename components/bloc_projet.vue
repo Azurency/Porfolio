@@ -1,5 +1,5 @@
 <template>
-    <div class="project" :style="{ background: color }">
+    <div class="project" :style="{ backgroundColor: color }" @mouseover="isHover=true" @mouseout="isHover=false">
         <div class="project__info">
             <h4 class="project__title" v-text="this.title"></h4>
             <p class="project__description">
@@ -7,7 +7,7 @@
             </p>
             <a :href="this.link" class="project__link" :style="{ color: linkColor }">
                 Voir plus
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="11" viewBox="0 0 14 11">
+                <svg class="project__arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="11" viewBox="0 0 14 11">
                     <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M0,4.5 L12,4.5" />
                         <polyline points="7.5 0 12 4.5 7.5 9" />
@@ -37,9 +37,16 @@ export default {
             required: true
         }
     },
+    data () {
+        return {
+            isHover: false,
+            computedlinkColor: Color(this.color).rotate(10).darken(0.4).desaturate(0.3),
+            computedlinkHoverColor: Color(this.color).rotate(10).darken(0.5).desaturate(0.1)
+        }
+    },
     computed: {
         linkColor () {
-            return Color(this.color).rotate(10).darken(0.4).desaturate(0.3)
+            return this.isHover ? this.computedlinkHoverColor : this.computedlinkColor
         }
     }
 }
@@ -50,6 +57,18 @@ export default {
 
 /* Bloc Projet
    ========================================================================== */
+
+/**
+* L'animation de la fleche.
+*/
+@keyframes pointing_arrow {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(5px);
+    }
+}
 
 /**
  * 1. Display flex pour center verticalement les info et l'image.
@@ -63,10 +82,20 @@ export default {
     background: $soft-grey;
     height: 260px;
     overflow: hidden; /* 2 */
+    cursor: pointer;
+    transition: transform $default-transition-duration $fast-bezier;
+    @include accelerate(scale);
 
     @include respond-to($phone) {
         flex-direction: column;
         height: 100%;
+    }
+
+    /**
+    * 1. Augmente lègèrement la taille du bloc en hover.
+    */
+    &:hover {
+        transform: scale(1.03); /* 1 */
     }
 
     /**
@@ -142,6 +171,21 @@ export default {
                 height: auto;
             }
         }
+    }
+
+    &__link {
+        transition: color $default-transition-duration $fast-bezier;
+    }
+
+    &__arrow {
+        @include accelerate(translateX);
+    }
+
+    /**
+    * 1. En hover du bloc, animation de la fleche.
+    */
+    &:hover &__arrow {
+        animation: $longer-transition-duration pointing_arrow infinite alternate; /* 2 */
     }
 }
 </style>

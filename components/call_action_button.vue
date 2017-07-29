@@ -54,7 +54,7 @@ export default {
     color: $white;
     position: relative;
     opacity: .9;
-    transition: all $default-transition-duration ease; 
+    transition: all $default-transition-duration $fast-bezier; 
 
     /**
     * 1. Animation de "levé" du bouton.
@@ -82,7 +82,7 @@ export default {
         height: 100%;
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18); /* 1 */
         opacity: 0; /* 2 */
-        transition: all 0.6s ease;
+        transition: all 0.6s $fast-bezier;
     }
 
     /**
@@ -94,7 +94,7 @@ export default {
     }
 
     &__content {
-        transition: transform $default-transition-duration ease;
+        transition: transform $default-transition-duration $fast-bezier;
     }
 
     /**
@@ -119,7 +119,7 @@ export default {
         right: 2.4em; /* 1 */
         top: calc( 50% - 10px ); /* 1 */
         opacity: 0; /* 2 */
-        transition: all $default-transition-duration ease;
+        transition: all $default-transition-duration $fast-bezier;
     }
 
     /**
