@@ -6,7 +6,8 @@
   "private": true,
   "dependencies": {
     "nuxt": "latest",
-    "sass-loader": "^6.0.6"
+    "sass-loader": "^6.0.6",
+    "scrollreveal": "^3.3.6"
   },
   "scripts": {
     "dev": "nuxt",

@@ -1,10 +1,10 @@
 <template>
     <footer class="footer">
-        <p class="footer__item">© 2017 Antoine Lassier.</p>
-        <p class="footer__item footer__item--grayed">
+        <p class="footer__item" v-scroll-reveal>© 2017 Antoine Lassier.</p>
+        <p class="footer__item footer__item--grayed" v-scroll-reveal>
             <a href="#" class="footer_link underline-hover">antoine.lassier@gmail.com</a>
         </p>
-        <p class="footer__item footer__item--grayed">Merci d'être passé ❤️</p>
+        <p class="footer__item footer__item--grayed" v-scroll-reveal>Merci d'être passé ❤️</p>
     </footer>
 </template>
 

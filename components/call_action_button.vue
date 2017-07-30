@@ -1,16 +1,20 @@
 <template>
-    <a :href="this.link" class="call-button" :style="{ background: color }">
-        <span class="call-button__content">
-            <span class="call-button__icon-left"><slot name="icon"></slot></span>{{ this.text }}</span>
-        <span class="call-button__icon-right">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
-                <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M0,6 L16,6" />
-                    <polyline points="10 0 16 6 10 12" />
-                </g>
-            </svg>
-        </span>
-    </a>
+    <div> <!-- Pour faire fonctionner l'animation de reveal -->
+        <a :href="this.link" class="call-button" :style="{ background: color }">
+            <span class="call-button__content">
+                <span class="call-button__icon-left">
+                    <slot name="icon"></slot>
+                </span>{{ this.text }}</span>
+            <span class="call-button__icon-right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
+                    <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M0,6 L16,6" />
+                        <polyline points="10 0 16 6 10 12" />
+                    </g>
+                </svg>
+            </span>
+        </a>
+    </div>
 </template>
 
 <script>

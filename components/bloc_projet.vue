@@ -1,21 +1,25 @@
 <template>
-    <div class="project" :style="{ backgroundColor: color }" @mouseover="isHover=true" @mouseout="isHover=false">
-        <div class="project__info">
-            <h4 class="project__title" v-text="this.title"></h4>
-            <p class="project__description">
-                <slot></slot>
-            </p>
-            <a :href="this.link" class="project__link" :style="{ color: linkColor }">
-                Voir plus
-                <svg class="project__arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="11" viewBox="0 0 14 11">
-                    <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M0,4.5 L12,4.5" />
-                        <polyline points="7.5 0 12 4.5 7.5 9" />
-                    </g>
-                </svg>
-            </a>
+    <div> <!-- Pour faire fonctionner l'animation de reveal -->
+        <div class="project" :style="{ backgroundColor: color }" @mouseover="isHover=true" @mouseout="isHover=false">
+            <div class="project__info">
+                <h4 class="project__title" v-text="this.title"></h4>
+                <p class="project__description">
+                    <slot></slot>
+                </p>
+                <a :href="this.link" class="project__link" :style="{ color: linkColor }">
+                    Voir plus
+                    <svg class="project__arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="11" viewBox="0 0 14 11">
+                        <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M0,4.5 L12,4.5" />
+                            <polyline points="7.5 0 12 4.5 7.5 9" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="project__image">
+                <slot name="image"></slot>
+            </div>
         </div>
-        <div class="project__image"><slot name="image"></slot></div>
     </div>
 </template>
 
@@ -52,7 +56,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '~assets/scss/_variables.scss';
 
 /* Bloc Projet

@@ -45,5 +45,6 @@ module.exports = {
                 })
             }
         }
-    }
+    },
+    plugins : [{ src: '~plugins/vue-scroll-reveal', ssr: false }]
 }

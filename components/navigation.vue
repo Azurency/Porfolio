@@ -1,9 +1,9 @@
 <template>
     <nav>
         <ul class="nav" :class="{ 'nav--colored': colored }">
-            <li class="nav__item"><a href="" class="nav__link underline-hover">Accueil</a></li>
-            <li class="nav__item"><a href="" class="nav__link underline-hover">Travail</a></li>
-            <li class="nav__item"><a href="" class="nav__link underline-hover">Contact</a></li>
+            <li class="nav__item" v-scroll-reveal="{ delay: 100 }"><a href="" class="nav__link underline-hover">Accueil</a></li>
+            <li class="nav__item" v-scroll-reveal="{ delay: 200}"><a href="" class="nav__link underline-hover">Travail</a></li>
+            <li class="nav__item" v-scroll-reveal="{ delay: 300 }"><a href="" class="nav__link underline-hover">Contact</a></li>
         </ul>
     </nav>
 </template>
