@@ -2,8 +2,8 @@
     <div>
         <index-header/>
         <section class="index-section">
-            <h3 class="index-section__title" v-scroll-reveal="{ delay: 400 }" >Actuellement</h3>
-            <icon-link color="#F68E69" buttonText="G.A.R.I." v-scroll-reveal="{ delay: 500 }">
+            <h3 class="index-section__title" style="visibility: hidden;" v-scroll-reveal="{ delay: 600 }" >Actuellement</h3>
+            <icon-link color="#F68E69" buttonText="G.A.R.I." style="visibility: hidden;" v-scroll-reveal="{ delay: 750 }">
                 <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
                     <g fill="none" fill-rule="evenodd" stroke="currentColor" transform="translate(1)">
                         <rect width="14.144" height="15.06" x="2.928" y=".75" stroke-width="1.5" rx="3.6" />
@@ -18,7 +18,7 @@
                 </svg>
                 Un logiciel de d'affectation de services à des véhicules en respectant des contraintes.
             </icon-link>
-            <icon-link color="rgba(116, 155, 209, 1.00)" buttonText="Freelance" v-scroll-reveal="{ delay: 600 }">
+            <icon-link color="rgba(116, 155, 209, 1.00)" buttonText="Freelance" style="visibility: hidden;" v-scroll-reveal="{ delay: 900 }">
                 <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
                     <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round">
                         <rect width="18" height="12.444" y="3.556" rx="1.778" />
@@ -30,23 +30,23 @@
         </section>
         <section class="index-section">
             <h3 class="index-section__title" v-scroll-reveal="{ delay: 700 }">Mon travail</h3>
-            <block-projet title="G.A.R.I." color="rgba(165, 230, 237, 1.00)" link="#" v-scroll-reveal="{ delay: 800 }">
+            <block-projet title="G.A.R.I." color="rgba(165, 230, 237, 1.00)" link="#" style="visibility: hidden;" v-scroll-reveal="{ delay: 1050 }">
                 Création d'un logiciel de gestion de l'affectation de services à des véhicules pour les réseaux de transport.
                 <img src="~assets/projet_gari.png" alt="Capture G.A.R.I. v1.5" slot="image" height="100%">
             </block-projet>
-            <block-projet title="Macollec-capsule" color="rgba(246, 142, 105, 1.00)" link="#" v-scroll-reveal="{ delay: 900 }">
+            <block-projet title="Macollec-capsule" color="rgba(246, 142, 105, 1.00)" link="#" style="visibility: hidden;" v-scroll-reveal="{ delay: 1200 }">
                 Réalisation du design d'un site de gestion d'une collection de capsules de champagne.
                 <img src="~assets/projet_macollec.png" alt="Capture Macollec-Capsule" slot="image" height="100%">
             </block-projet>
-            <block-projet title="Roadtrip blog" color="rgba(157, 205, 243, 1.00)" link="#" v-scroll-reveal="{ delay: 1000 }">
+            <block-projet title="Roadtrip blog" color="rgba(157, 205, 243, 1.00)" link="#" style="visibility: hidden;" v-scroll-reveal="{ delay: 1350 }">
                 À l'occasion d'un roadtrip en Angletterre, j'ai mis en place en blog pour garder une trace de mon voyage.
                 <img src="~assets/projet_roadtrip.png" alt="Illustration self-portrait et capture article" slot="image" height="100%">
             </block-projet>
-            <block-projet title="Handball team manager" color="rgba(186, 234, 138, 1.00)" link="#" v-scroll-reveal="{ delay: 1100 }">
+            <block-projet title="Handball team manager" color="rgba(186, 234, 138, 1.00)" link="#" style="visibility: hidden;" v-scroll-reveal="{ delay: 1500 }">
                 Lors d'un projet d'étude, j'ai créer un logiciel de gestion d'un championat de handball.
                 <img src="~assets/projet_handball.png" alt="Captures Handball Manager" slot="image" height="100%">
             </block-projet>
-            <block-projet title="Don't break the chain" color="rgba(218, 212, 209, 1.00)" link="#" v-scroll-reveal="{ delay: 1200 }">
+            <block-projet title="Don't break the chain" color="rgba(218, 212, 209, 1.00)" link="#" style="visibility: hidden;" v-scroll-reveal="{ delay: 1650 }">
                 Design d'un prototype d'application iOS et développement d'un version android pour un projet scolaire.
                 <img src="~assets/projet_dontbreakthechain.png" alt="Design de Don't break the chain" slot="image" height="100%">
             </block-projet>

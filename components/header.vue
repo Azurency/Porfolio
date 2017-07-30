@@ -3,9 +3,9 @@
         <div class="index-header__container">
             <navigation class="index-header__nav" colored/>
             <div class="index-header__info">
-                <p class="index-header__text" v-scroll-reveal="{ delay: 100 }">Bonjour, je suis</p>
-                <h1 class="index-header__iam" v-scroll-reveal="{ delay: 200 }">Antoine Lassier</h1>
-                <p class="index-header__text" v-scroll-reveal="{ delay: 300 }">
+                <p class="index-header__text" style="visibility: hidden;" v-scroll-reveal="{ delay: 150 }">Bonjour, je suis</p>
+                <h1 class="index-header__iam" style="visibility: hidden;" v-scroll-reveal="{ delay: 300 }">Antoine Lassier</h1>
+                <p class="index-header__text" style="visibility: hidden;" v-scroll-reveal="{ delay: 450 }">
                     Un <b>développeur</b> freelance et
                     <b>designer</b> passioné habitant actuellement à Orléans en France. Je créer des applications web et mobiles sur mesure, intuitives, utiles et jolies.
                 </p>
@@ -175,49 +175,49 @@ export default {
     }
 
     &__1 {
-        transition-delay: 200ms;
+        transition-delay: 250ms;
         opacity: 1;
         transform: translateY(0);
     }
 
     &__2 {
-        transition-delay: 350ms;
+        transition-delay: 450ms;
         opacity: 1;
         transform: translateY(0);
     }
 
     &__3 {
-        transition-delay: 400ms;
+        transition-delay: 500ms;
         opacity: .45;
         transform: translateY(0);
     }
 
     &__4 {
-        transition-delay: 400ms;
+        transition-delay: 500ms;
         opacity: .6;
         transform: translateY(0);
     }
 
     &__5 {
-        transition-delay: 600ms;
+        transition-delay: 700ms;
         opacity: 1;
         transform: translateY(0);
     }
 
     &__6 {
-        transition-delay: 600ms;
+        transition-delay: 700ms;
         opacity: .8;
         transform: translateY(0);
     }
 
     &__7 {
-        transition-delay: 300ms;
+        transition-delay: 400ms;
         opacity: .5;
         transform: translateY(0);
     }
 
     &__8 {
-        transition-delay: 400ms;
+        transition-delay: 500ms;
         opacity: .302;
         transform: translateY(0);
     }
