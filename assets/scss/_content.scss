@@ -8,6 +8,42 @@
 a {
     color: inherit; /* 1 */
     text-decoration: none; /* 2 */
+
+    &.underline-hover {
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            bottom: 0;
+            left: 0;
+            height: 1px;
+            width: 0%;
+            transition: width $default-transition-duration ease;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            bottom: 0;
+            right: 0;
+            height: 1px;
+            width: 0%;
+            border-bottom: $hover-border-width solid;
+            transition: width $longer-transition-duration ease;
+        }
+
+        &:hover::before {
+            width: 100%;
+            border-bottom: $hover-border-width solid;
+        }
+
+        &:hover::after {
+            width: 100%;
+            border-bottom: $hover-border-width solid transparent;
+            transition: all 0s ease;
+        }
+    }
 }
 
 /**

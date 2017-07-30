@@ -105,7 +105,7 @@
         <section class="contact-section">
             <div class="index-section index-section--center">
                 <h5 class="index-section__leadtitle">Disponible en freelance</h5>
-                <h3 class="index-section__title index-section__title--borderless">Envie de travailler avec moi ?<br>Je suis toujours intéréssé par de nouveau projets.</h3>
+                <h3 class="index-section__title index-section__title--borderless">Envie de travailler avec moi ?<br>Je suis toujours intéréssé par de nouveaux projets.</h3>
                 <call-button text="Conctactez moi" link="#" color="#2588C4">
                     <template slot="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">

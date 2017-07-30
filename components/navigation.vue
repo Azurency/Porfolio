@@ -1,9 +1,9 @@
 <template>
     <nav>
         <ul class="nav" :class="{ 'nav--colored': colored }">
-            <li class="nav__item"><a href="" class="nav__link">Accueil</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Travail</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
+            <li class="nav__item"><a href="" class="nav__link underline-hover">Accueil</a></li>
+            <li class="nav__item"><a href="" class="nav__link underline-hover">Travail</a></li>
+            <li class="nav__item"><a href="" class="nav__link underline-hover">Contact</a></li>
         </ul>
     </nav>
 </template>
@@ -51,40 +51,6 @@ export default {
 
         &:hover {
             color: $dark-text;
-        }
-
-        &::before {
-            content: '';
-            position: absolute;
-            display: block;
-            bottom: 0;
-            left: 0;
-            height: 1px;
-            width: 0%;
-            transition: width $default-transition-duration ease;
-        }
-
-        &::after {
-            content: '';
-            position: absolute;
-            display: block;
-            bottom: 0;
-            right: 0;
-            height: 1px;
-            width: 0%;
-            border-bottom: $hover-border-width solid;
-            transition: width $longer-transition-duration ease;
-        }
-
-        &:hover::before {
-            width: 100%;
-            border-bottom: $hover-border-width solid;
-        }
-
-        &:hover::after {
-            width: 100%;
-            border-bottom: $hover-border-width solid transparent;
-            transition: all 0s ease;
         }
     }
 
