@@ -35,14 +35,14 @@
                     </linearGradient>
                 </defs>
                 <g fill="none" fill-rule="evenodd" transform="translate(0 -14)">
-                    <path class="svg-anim svg-anim--top" :class="{ 'svg-anim__1': loaded }" fill="#CAE8F0" d="M558.049183,474 C579.062337,154.231224 574.226932,-3.62554671 543.542969,0.4296875 C493.769531,7.0078125 451,107.753906 304.804688,207.707031 C158.609375,307.660156 -64.4882812,-16.3359375 17.8710938,170.304687 C100.230469,356.945312 50.859375,48.515625 185.796875,62.6835937 C317.556244,76.5178698 59.1817127,295.670234 180.984375,321.410156 C211.036016,327.760813 235.394531,385.226562 129.476563,431.394531 C23.5585938,477.5625 10.0351563,325.445312 140,388.078125 C189.826375,412.090511 256.460905,440.731136 339.90359,474 L558.049183,474 Z M552.861893,548.999974 C552.709676,551.10331 552.556492,553.212694 552.402344,555.328125 C546.672628,553.205791 540.989976,551.096416 535.354385,549 L552.861892,549 L552.861893,548.999974 Z" />
-                    <circle class="svg-anim svg-anim--long" :class="{ 'svg-anim__2': loaded }" cx="425.5" cy="238.5" r="138.922" fill="#FFAC3F" />
-                    <circle class="svg-anim svg-anim--long" :class="{ 'svg-anim__3': loaded }" cx="283.5" cy="198.5" r="70.5" fill="url(#a)" />
-                    <polygon class="svg-anim" :class="{ 'svg-anim__4': loaded }" stroke="url(#b)" stroke-width="10" points="362 393.538 423.946 368 405.55 431.396" stroke-linecap="round" />
-                    <path class="svg-anim" :class="{ 'svg-anim__5': loaded }" stroke="url(#c)" stroke-width="10" d="M344.152181,43 C326.864297,59.8272991 331.655728,68.7902154 358.526472,69.8887489 C398.83259,71.536549 348.388112,106.549381 383.887096,110.065078 C419.386079,113.580775 419.547037,132.641499 412.080178,145" stroke-linecap="round" />
-                    <polygon class="svg-anim" :class="{ 'svg-anim__6': loaded }" fill="url(#d)" points="430 472.078 494.092 438 528.17 502.092 464.078 536.17" />
-                    <circle class="svg-anim" :class="{ 'svg-anim__7': loaded }" cx="237.5" cy="442.5" r="49.5" fill="#82A6C2" />
-                    <circle class="svg-anim" :class="{ 'svg-anim__8': loaded }" cx="243.5" cy="436.5" r="49.5" fill="#50CDF7" />
+                    <path class="svg-anim" data-start="-25px" data-delay="300" fill="#CAE8F0" d="M558.049183,474 C579.062337,154.231224 574.226932,-3.62554671 543.542969,0.4296875 C493.769531,7.0078125 451,107.753906 304.804688,207.707031 C158.609375,307.660156 -64.4882812,-16.3359375 17.8710938,170.304687 C100.230469,356.945312 50.859375,48.515625 185.796875,62.6835937 C317.556244,76.5178698 59.1817127,295.670234 180.984375,321.410156 C211.036016,327.760813 235.394531,385.226562 129.476563,431.394531 C23.5585938,477.5625 10.0351563,325.445312 140,388.078125 C189.826375,412.090511 256.460905,440.731136 339.90359,474 L558.049183,474 Z M552.861893,548.999974 C552.709676,551.10331 552.556492,553.212694 552.402344,555.328125 C546.672628,553.205791 540.989976,551.096416 535.354385,549 L552.861892,549 L552.861893,548.999974 Z" />
+                    <g class="svg-anim-container"><circle class="svg-anim js-floating-shape" data-duration="15s"  data-start="100px" data-delay="450" cx="425.5" cy="238.5" r="138.922" fill="#FFAC3F" /></g>
+                    <g class="svg-anim-container"><circle class="svg-anim js-floating-shape"  data-reverse data-duration="9s" data-start="100px" data-delay="500" cx="283.5" cy="198.5" r="70.5" fill="url(#a)" data-opacity=".45" /></g>
+                    <g class="svg-anim-container"><polygon class="svg-anim js-floating-shape" data-reverse data-duration="15s" data-delay="500" stroke="url(#b)" stroke-width="10" points="362 393.538 423.946 368 405.55 431.396" stroke-linecap="round" data-opacity=".6"  /></g>
+                    <g class="svg-anim-container"><path class="svg-anim js-floating-shape" data-reverse data-delay="700" stroke="url(#c)" stroke-width="10" d="M344.152181,43 C326.864297,59.8272991 331.655728,68.7902154 358.526472,69.8887489 C398.83259,71.536549 348.388112,106.549381 383.887096,110.065078 C419.386079,113.580775 419.547037,132.641499 412.080178,145" stroke-linecap="round" /></g>
+                    <g class="svg-anim-container"><polygon class="svg-anim js-floating-shape" data-delay="700" data-min-offset="-25" data-max-offset="25" fill="url(#d)" points="430 472.078 494.092 438 528.17 502.092 464.078 536.17" data-opacity=".8" /></g>
+                    <g class="svg-anim-container"><circle class="svg-anim js-floating-shape" data-duration="9s" data-delay="400" data-min-offset="-25" data-max-offset="25" cx="237.5" cy="442.5" r="49.5" fill="#82A6C2" data-opacity=".5"  /></g>
+                    <g class="svg-anim-container"><circle class="svg-anim js-floating-shape" data-duration="15s" data-delay="500"  cx="243.5" cy="436.5" r="49.5" fill="#50CDF7" data-opacity=".3"  /></g>
                 </g>
             </svg>
     
@@ -52,18 +52,46 @@
 
 <script>
 import Navigation from '~components/navigation.vue'
+import { getRandomInt } from '~assets/js/utils.js'
 
 export default {
-    data () {
-        return {
-            loaded: false
-        }
-    },
     components: {
         Navigation
     },
+    methods: {
+        runShapeAnimation (shape) {
+            if (!shape.classList.contains('js-floating-shape')) return
+            let duration = shape.hasAttribute('data-duration') ? shape.getAttribute('data-duration') : getRandomInt(10, 15) + 's'
+            let reverse = shape.hasAttribute('data-reverse') ? 'reverse' : 'normal'
+            let delay = getRandomInt(500, 1000)
+
+            shape.style.animationDuration = duration
+            shape.parentElement.style.animationDuration = getRandomInt(18, 25) + 's'
+            shape.style.animationDirection = reverse
+            shape.parentElement.style.animationDirection = reverse
+            shape.style.animationDelay = delay
+            shape.parentElement.style.animationDelay = delay
+            shape.parentElement.style.animationPlayState = 'running'
+            shape.style.animationPlayState = 'running'
+        }
+    },
     mounted () {
-        this.loaded = true
+        let shapes = document.querySelectorAll('.svg-anim')
+        shapes.forEach((shape) => {
+            // Position initiale
+            shape.style.transform = 'translateY(' + (shape.hasAttribute('data-start') ? shape.getAttribute('data-start') : '25px') + ')'
+
+            // Transition vers l'état post-chargement
+            let opacity = shape.hasAttribute('data-opacity') ? shape.getAttribute('data-opacity') : 1
+            var delay = shape.hasAttribute('data-delay') ? parseInt(shape.getAttribute('data-delay')) : 0
+            setTimeout(() => {
+                shape.style.opacity = opacity
+                shape.style.transform = 'translateY(0px)'
+                setTimeout(() => {
+                    this.runShapeAnimation(shape)
+                }, delay)
+            }, delay)
+        }, this)
     }
 }
 </script>
@@ -161,65 +189,75 @@ export default {
     }
 }
 
+/**
+* Hack rotate pour Firefox, qui est clairement en train de disparaitre heureusement
+*/
+
+@keyframes floatingX {
+	0% {
+		transform: translateX(0px) rotate(0.0001deg);	
+	}
+	20% {
+		transform: translateX(5px) rotate(0.0001deg);	
+	}	
+	40% {
+		transform: translateX(17px) rotate(0.0001deg);	
+	}	
+	60% {
+		transform: translateX(5px) rotate(0.0001deg);	
+    }
+    80% {
+		transform: translateX(-7px) rotate(0.0001deg);	
+	}
+	100% {
+		transform: translateX(0px) rotate(0.0001deg);
+	}			
+}
+
+@keyframes floatingY {
+	0% {
+		transform: translateY(0px) rotate(0.0001deg);	
+	}
+	25% {
+		transform: translateY(20px) rotate(0.0001deg);	
+    }
+    50% {
+		transform: translateY(0px) rotate(0.0001deg);	
+    }
+    75% {
+		transform: translateY(-20px) rotate(0.0001deg);	
+	}
+	100% {
+		transform: translateY(0px) rotate(0.0001deg);
+	}			
+}
+
+/**
+ * 1. Opacité 0 au chargement de la page.
+ * 2. Transition pour l'opacité et le translateX au chargement de la page.
+ * 3. Mise en place de l'animation de flottement.
+ */
+
+
 .svg-anim {
-    opacity: 0;
-    transform: translateY(25px);
-    transition: all $longer-transition-duration;
+   opacity: 0; /* 1 */
+   transition: all $longer-transition-duration; /* 2 */
+   animation-name: floatingX; /* 3 */
+   animation-iteration-count: infinite; /* 3 */
+   animation-timing-function: ease-in-out; /* 3 */
+   animation-play-state: paused; /* 3 */
+   @include accelerate(transform);
+}
 
-    &--long {
-        transform: translateY(5em);
-    }
+/**
+ * 1. Mise en place de l'animation de flottement (container car impossible de stack des animations).
+ */
 
-    &--top {
-        transform: translateY(-25px);
-    }
-
-    &__1 {
-        transition-delay: 250ms;
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    &__2 {
-        transition-delay: 450ms;
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    &__3 {
-        transition-delay: 500ms;
-        opacity: .45;
-        transform: translateY(0);
-    }
-
-    &__4 {
-        transition-delay: 500ms;
-        opacity: .6;
-        transform: translateY(0);
-    }
-
-    &__5 {
-        transition-delay: 700ms;
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    &__6 {
-        transition-delay: 700ms;
-        opacity: .8;
-        transform: translateY(0);
-    }
-
-    &__7 {
-        transition-delay: 400ms;
-        opacity: .5;
-        transform: translateY(0);
-    }
-
-    &__8 {
-        transition-delay: 500ms;
-        opacity: .302;
-        transform: translateY(0);
-    }
+.svg-anim-container {
+    animation-name: floatingY; /* 1 */
+    animation-iteration-count: infinite; /* 1 */
+    animation-timing-function: ease-in-out; /* 1 */
+    animation-play-state: paused; /* 1 */
+    @include accelerate(transform);
 }
 </style>
