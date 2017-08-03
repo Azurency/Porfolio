@@ -5,10 +5,10 @@
  * 1. Hérite la couleur du contexte actuel.
  * 2. Supprime le style souligné.
  */
+
 a {
     color: inherit; /* 1 */
     text-decoration: none; /* 2 */
-
     &.underline-hover {
         &::before {
             content: '';
@@ -20,7 +20,6 @@ a {
             width: 0%;
             transition: width $default-transition-duration ease;
         }
-
         &::after {
             content: '';
             position: absolute;
@@ -32,12 +31,10 @@ a {
             border-bottom: $hover-border-width solid;
             transition: width $longer-transition-duration ease;
         }
-
         &:hover::before {
             width: 100%;
             border-bottom: $hover-border-width solid;
         }
-
         &:hover::after {
             width: 100%;
             border-bottom: $hover-border-width solid transparent;
@@ -52,18 +49,18 @@ a {
 
 nav ol,
 nav ul {
-	list-style: none;
+    list-style: none;
 }
 
 .mobile-only {
     display: none;
-    @include respond-to($phone) { 
+    @include respond-to($phone) {
         display: initial;
     }
 }
 
 .not-mobile {
-    @include respond-to($phone) { 
+    @include respond-to($phone) {
         display: none;
     }
 }

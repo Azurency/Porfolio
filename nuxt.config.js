@@ -47,5 +47,6 @@ module.exports = {
         },
         vendor: ['animejs', 'scrollreveal']
     },
-    plugins : [{ src: '~plugins/vue-scroll-reveal', ssr: false }]
+    plugins : [{ src: '~plugins/vue-scroll-reveal', ssr: false }, 
+                { src: '~plugins/vue-tippy', ssr: false }]
 }

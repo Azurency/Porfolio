@@ -8,7 +8,8 @@
     "animejs": "^2.0.2",
     "nuxt": "latest",
     "sass-loader": "^6.0.6",
-    "scrollreveal": "^3.3.6"
+    "scrollreveal": "^3.3.6",
+    "tippy.js": "^1.2.0"
   },
   "scripts": {
     "dev": "nuxt",
