@@ -1,7 +1,7 @@
 <template>
     <header class="index-header">
         <div class="index-header__container">
-            <navigation class="index-header__nav" colored/>
+            <navigation class="index-header__nav" color="rgba(93, 178, 201, 1.00)"/>
             <div class="index-header__info">
                 <p class="index-header__text" style="visibility: hidden;" v-scroll-reveal="{ delay: 150 }">Bonjour, je suis</p>
                 <h1 class="index-header__iam" style="visibility: hidden;" v-scroll-reveal="{ delay: 300 }">Antoine Lassier</h1>
@@ -91,7 +91,6 @@ export default {
                 const correctShapePosition = (shape) => {
                     const st = window.getComputedStyle(shape, null)
                     const tr = st.getPropertyValue('-moz-transform') || st.getPropertyValue('transform') || null
-                    console.log(tr)
                     if (tr && tr !== 'none') {
                         const values = tr.split('(')[1].split(')')[0].split(',')
                         shape.setAttribute('transform', 'translate(' + values[4] + ' ' + values[5] + ')')

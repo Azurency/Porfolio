@@ -1,12 +1,12 @@
 <template>
     <div> <!-- Pour faire fonctionner l'animation de reveal -->
-        <div class="project" :style="{ backgroundColor: color }" @mouseover="isHover=true" @mouseout="isHover=false">
+        <div class="project" :style="{ backgroundColor: color }" @mouseover="isHover=true" @mouseout="isHover=false" @click="gotoProject">
             <div class="project__info">
                 <h4 class="project__title" v-text="this.title"></h4>
                 <p class="project__description">
                     <slot></slot>
                 </p>
-                <a :href="this.link" class="project__link" :style="{ color: linkColor }">
+                <nuxt-link :to="this.link" ref="link" class="project__link" :style="{ color: linkColor }">
                     Voir plus
                     <svg class="project__arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="11" viewBox="0 0 14 11">
                         <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round">
@@ -14,7 +14,7 @@
                             <polyline points="7.5 0 12 4.5 7.5 9" />
                         </g>
                     </svg>
-                </a>
+                </nuxt-link>
             </div>
             <div class="project__image">
                 <slot name="image"></slot>
@@ -51,6 +51,11 @@ export default {
     computed: {
         linkColor () {
             return this.isHover ? this.computedlinkHoverColor : this.computedlinkColor
+        }
+    },
+    methods: {
+        gotoProject () {
+            this.$router.push(this.link)
         }
     }
 }

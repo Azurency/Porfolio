@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <ul class="nav" :class="{ 'nav--colored': colored }">
+        <ul class="nav">
             <li class="nav__item" style="visibility: hidden;" v-scroll-reveal="{ delay: 150 }"><a href="" class="nav__link underline-hover">Accueil</a></li>
             <li class="nav__item" style="visibility: hidden;" v-scroll-reveal="{ delay: 300 }"><a href="" class="nav__link underline-hover">Travail</a></li>
             <li class="nav__item" style="visibility: hidden;" v-scroll-reveal="{ delay: 450 }"><a href="" class="nav__link underline-hover">Contact</a></li>
@@ -9,13 +9,29 @@
 </template>
 
 <script>
+import Color from 'color'
+
 export default {
     props: {
-        colored: {
-            type: Boolean,
-            required: false,
-            default: false
+        color: {
+            type: String,
+            required: true
         }
+    },
+    data () {
+        return {
+            hoverColor: Color(this.color).rotate(5).darken(0.45).rgb()
+        }
+    },
+    mounted () {
+        const css = `.nav{color:${this.color}}.nav__link:hover{color:${this.hoverColor}}`
+        const style = document.createElement('style')
+        if (style.styleSheet) {
+            style.styleSheet.cssText = css
+        } else {
+            style.appendChild(document.createTextNode(css))
+        }
+        document.getElementsByTagName('head')[0].appendChild(style)
     }
 }
 </script>
@@ -51,14 +67,6 @@ export default {
 
         &:hover {
             color: $dark-text;
-        }
-    }
-
-    &--colored {
-        color: $fountain-blue;
-
-        & .nav__link:hover {
-            color: $fountain-blue-hover;
         }
     }
 }
