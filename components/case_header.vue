@@ -8,13 +8,13 @@
                 <navigation class="case-header__nav" :color="this.darkenColor"/>
             </div>
             <div class="case-header__content">
-                <nuxt-link :to="this.nextCase" class="arrow arrow--left" :style="{ color: this.darkenColor }">
+                <nuxt-link :to="this.prevCase" class="arrow arrow--left" :style="{ color: this.darkenColor }">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24">
                         <polyline fill="none" stroke="currentColor" stroke-width="3" points="0 20 10 10 0 0" transform="translate(2 2)" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </nuxt-link>
                 <p class="case-header__description"><slot></slot></p>
-                <nuxt-link :to="this.prevCase" class="arrow arrow--right" :style="{ color: this.darkenColor }">
+                <nuxt-link :to="this.nextCase" class="arrow arrow--right" :style="{ color: this.darkenColor }">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24">
                         <polyline fill="none" stroke="currentColor" stroke-width="3" points="0 20 10 10 0 0" transform="translate(2 2)" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -45,7 +45,7 @@ export default {
     },
     data () {
         return {
-            darkenColor: Color(this.color).rotate(5).darken(0.45)
+            darkenColor: Color(this.color).rotate(5).darken(0.45).rgb().string()
         }
     },
     components: {
@@ -128,7 +128,7 @@ export default {
 */
 
 .arrow {
-    padding: 1em; /* 1 */
+    padding: 5em 0em 5em 5em; /* 1 */
     height: 100%;
     display: block;
 

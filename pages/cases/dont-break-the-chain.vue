@@ -1,6 +1,6 @@
 <template>
     <div>
-        <case-header color="rgba(218, 212, 209, 1.00)" next-case="#" prev-case="#">
+        <case-header color="rgba(218, 212, 209, 1.00)" next-case="/cases/gari" prev-case="/cases/handball-manager">
             <b>Don't break the chain</b> est un projet design d'une application.
         </case-header>
     </div>

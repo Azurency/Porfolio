@@ -10,6 +10,7 @@
 
 <script>
 import Color from 'color'
+import { addDynamicCssRule } from '~assets/js/utils'
 
 export default {
     props: {
@@ -23,15 +24,8 @@ export default {
             hoverColor: Color(this.color).rotate(5).darken(0.45).rgb()
         }
     },
-    mounted () {
-        const css = `.nav{color:${this.color}}.nav__link:hover{color:${this.hoverColor}}`
-        const style = document.createElement('style')
-        if (style.styleSheet) {
-            style.styleSheet.cssText = css
-        } else {
-            style.appendChild(document.createTextNode(css))
-        }
-        document.getElementsByTagName('head')[0].appendChild(style)
+    beforeMount () {
+        addDynamicCssRule(`.nav{color:${this.color}}.nav__link:hover{color:${this.hoverColor}}`)
     }
 }
 </script>
