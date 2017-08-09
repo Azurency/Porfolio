@@ -9,6 +9,7 @@
 a {
     color: inherit; /* 1 */
     text-decoration: none; /* 2 */
+    position: relative;
     &.underline-hover {
         &::before {
             content: '';
@@ -72,6 +73,11 @@ nav ul {
 .case {
     padding: 2em 0;
 
+    a {
+        color: $dark-text;
+        padding-bottom: .15em;
+    }
+
     &__container {
         @include container;
         max-width: 700px;
@@ -84,14 +90,15 @@ nav ul {
         color: $dark-text;
     }
 
-    &__img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    &__img-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    &__img {
         &--shadow {
             box-shadow: 0 0 25px 0 rgba(0,0,0,0.15);
-            margin-bottom: 1em;
         }
 
         &--small-shadow {
@@ -161,15 +168,11 @@ nav ul {
         }
     }
 
-    &_legend {
+    &__legend {
         font-family: "europa", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         font-style: italic;
         font-size: 14px;
         text-align: center;
-    }
-
-    &__img+&_legend {
-        margin-top: 0;
     }
 
     &__paragraph, {

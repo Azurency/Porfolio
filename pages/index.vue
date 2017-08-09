@@ -39,7 +39,7 @@
                 <img src="~assets/projet_macollec.png" alt="Capture Macollec-Capsule" slot="image" height="100%">
             </block-projet>
             <block-projet title="Roadtrip blog" color="rgba(157, 205, 243, 1.00)" link="/cases/roadtrip" style="visibility: hidden;" v-scroll-reveal="{ delay: 1350 }">
-                À l'occasion d'un roadtrip en Angletterre, j'ai mis en place en blog pour garder une trace de mon voyage.
+                À l'occasion d'un roadtrip en Angleterre, j'ai mis en place en blog pour garder une trace de mon voyage.
                 <img src="~assets/projet_roadtrip.png" alt="Illustration self-portrait et capture article" slot="image" height="100%">
             </block-projet>
             <block-projet title="Handball team manager" color="rgba(186, 234, 138, 1.00)" link="/cases/handball-manager" style="visibility: hidden;" v-scroll-reveal="{ delay: 1500 }">

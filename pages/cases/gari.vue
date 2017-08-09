@@ -20,7 +20,9 @@
                     <li class="case__list-item">...</li>
                 </ul>
             </section>
-            <img src="~assets/case-gari-1.png" alt="capture GARI 1" class="case__img">
+            <div class="case__img-container">
+                <img src="~assets/case-gari-1.png" alt="capture GARI 1" class="case__img">
+            </div>
             <section class="case__container">
                 <p class="case__paragraph">Le logiciel devait donc être en mesure de :</p>
                 <ul class="case__list">
@@ -44,11 +46,11 @@
                 <div class="case__flex">
                     <div class="case__flex-item">
                         <img src="~assets/case-gari-2.png" alt="capture GARI 2" class="case__img">
-                        <p class="case_legend">MCD des service et des liens avec les autres tables</p>
+                        <p class="case__legend">MCD des service et des liens avec les autres tables</p>
                     </div>
                     <div class="case__flex-item">
                         <img src="~assets/case-gari-3.png" alt="capture GARI 3" class="case__img">
-                        <p class="case_legend">MCD ligne et groupe de ligne</p>
+                        <p class="case__legend">MCD ligne et groupe de ligne</p>
                     </div>
                 </div>
             </div>
@@ -106,21 +108,25 @@
             <div class="case__flex">
                 <div class="case__flex-item">
                     <img src="~assets/case-gari-6.png" alt="capture GARI 6" class="case__img">
-                    <p class="case_legend">Interface de gestion des véhicules avec des onglets et un code couleur</p>
+                    <p class="case__legend">Interface de gestion des véhicules avec des onglets et un code couleur</p>
                 </div>
                 <div class="case__flex-item" style="margin-left:-160px;">
                     <img src="~assets/case-gari-7.png" alt="capture GARI 7" class="case__img">
-                    <p class="case_legend">Écran des coupures</p>
+                    <p class="case__legend">Écran des coupures</p>
                 </div>
             </div>
-            <img src="~assets/case-gari-8.png" alt="capture GARI 8" class="case__img">
-            <p class="case_legend">Écran principal, l'affectation. Les dépots peuvent etre différencier avec les couleurs différentes des lignes, les types de véhicules ont tous un code couleur.</p>
+            <div class="case__img-container">
+                <img src="~assets/case-gari-8.png" alt="capture GARI 8" class="case__img">
+                <p class="case__legend">Écran principal, l'affectation. Les dépots peuvent etre différencier avec les couleurs différentes des lignes, les types de véhicules ont tous un code couleur.</p>
+            </div>
             <section class="case__container" style="margin-top: 3em">
                 <h2 class="case__title">Quelques détails</h2>
                 <p class="case__paragraph">Depuis la v1.5, les choix proposer dans les modals sont plus clair pour que l'utilisateur ait une idée précise de l'action qu'il va effectuer, plus de "Ok" et "annuler" sans contexte.</p>
             </section>
-            <img src="~assets/case-gari-9.png" alt="capture GARI 9" class="case__img">
-            <p class="case_legend">Oui, supprimer ou Non, garder cette indisponibilité = un choix clair.</p>
+            <div class="case__img-container">
+                <img src="~assets/case-gari-9.png" alt="capture GARI 9" class="case__img">
+                <p class="case__legend">Oui, supprimer ou Non, garder cette indisponibilité = un choix clair.</p>
+            </div>
             <section class="case__container" style="margin-top: 3em">
                 <h2 class="case__title">Retours utilisateur</h2>
                 <p class="case__paragraph">Les retours utilisateurs ont jusque là été très positifs. L’outil est agréable à utiliser, pratique et leur permet de gagner du temps.<br>Les améliorations de la version 1.5 ont été aussi bien accueillies et d’autres modifications sont déjà en train d’être étudiées pour une prochaine version.</p>
@@ -149,7 +155,7 @@ export default {
         return {
             color: 'rgba(165, 230, 237, 1.00)',
             darkenColor: Color('rgba(165, 230, 237, 1.00)').rotate(5).darken(0.45).rgb().string(),
-            roles: ['Conception', 'Développement', 'Design', 'Tests'],
+            roles: ['Conception', 'Design', 'Développement', 'Tests'],
             technologies: ['Python (Flask)', 'Vue.js', 'MySQL', 'HTML/CSS'],
             annee: '2016-2017'
         }
