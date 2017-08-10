@@ -64,7 +64,7 @@
             </div>
             <section class="case__container">
                 <h2 class="case__title">Jekyll</h2>
-                <p class="case__paragraph">Le blog est entièrement statique c'est-à-dire que dans la version sur le serveur, il n'y a que des <b>fichiers HTML et CSS</b>. Tout est généré par <a href="https://jekyllrb.com" class="footer_link underline-hover">Jekyll</a>, les posts sont écrits en markdown et ensuite converti en HTML suivant le patron pour les articles.</p>
+                <p class="case__paragraph">Le blog est entièrement statique c'est-à-dire que dans la version sur le serveur, il n'y a que des <b>fichiers HTML et CSS</b>. Tout est généré par <a href="https://jekyllrb.com" class="underline-hover">Jekyll</a>, les posts sont écrits en markdown et ensuite converti en HTML suivant le patron pour les articles.</p>
                 <p class="case__paragraph">J'ai utilisé un préprocesseur scss et ai découpé les différents composants du site en fichiers facilitant ainsi la maintenance.</p>
                 <p class="case__paragraph">Le petit utilitaire calculant la durée de lecture des posts a été écrit en Ruby (langage utilisé par Jekyll).</p>
                 <p class="case__paragraph">N'hésitez pas à aller faire un tour sur

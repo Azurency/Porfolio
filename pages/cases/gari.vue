@@ -156,7 +156,7 @@ export default {
             color: 'rgba(165, 230, 237, 1.00)',
             darkenColor: Color('rgba(165, 230, 237, 1.00)').rotate(5).darken(0.45).rgb().string(),
             roles: ['Conception', 'Design', 'Développement', 'Tests'],
-            technologies: ['Python (Flask)', 'Vue.js', 'MySQL', 'HTML/CSS'],
+            technologies: ['Python (Flask)', 'UML/Merise', 'Vue.js', 'MySQL', 'HTML/CSS'],
             annee: '2016-2017'
         }
     },
