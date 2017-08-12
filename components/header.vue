@@ -53,6 +53,7 @@
 <script>
 import Navigation from '~components/navigation.vue'
 import { getRandomInt } from '~assets/js/utils.js'
+const HACK_TIMEOUT_TIME = 10
 
 export default {
     components: {
@@ -82,10 +83,6 @@ export default {
         hoverShape (event) {
             const shape = event.target
 
-            // Mise en pause de l'animation
-            shape.parentElement.style.animationPlayState = 'paused'
-            shape.style.animationPlayState = 'paused'
-
             // Hack de la position pour Firefox (https://bugzilla.mozilla.org/show_bug.cgi?id=1066435)
             if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
                 const correctShapePosition = (shape) => {
@@ -112,29 +109,33 @@ export default {
                     tippy: currentTippy
                 })
             }
+            const popper = currentTippy.getPopperElement(shape)
+            currentTippy.show(popper, 375)
+
+            // Mise en pause de l'animation
             // Hack timeout pour minimiser le 'flicker' dans Safari (pas sûr du vrai impact)
             setTimeout(() => {
-                const popper = currentTippy.getPopperElement(shape)
-                currentTippy.show(popper, 375)
-            }, 10)
+                shape.parentElement.style.animationPlayState = 'paused'
+                shape.style.animationPlayState = 'paused'
+            }, HACK_TIMEOUT_TIME)
         },
         leaveShape (event) {
             const shape = event.target
-
-            // Relancement de l'animation
-            shape.parentElement.style.animationPlayState = 'running'
-            shape.style.animationPlayState = 'running'
 
             // Hide du tooltip s'il existe
             const tippyInstance = this.tippyInstances.find((instance) => instance.el === shape)
             if (tippyInstance) {
                 const currentTippy = tippyInstance.tippy
-                // Hack timeout pour minimiser le 'flicker' dans Safari (pas sûr du vrai impact)
-                setTimeout(() => {
-                    const popper = currentTippy.getPopperElement(shape)
-                    currentTippy.hide(popper, 375)
-                }, 10)
+                const popper = currentTippy.getPopperElement(shape)
+                currentTippy.hide(popper, 375)
             }
+
+            // Relancement de l'animation
+            // Hack timeout pour minimiser le 'flicker' dans Safari
+            setTimeout(() => {
+                shape.parentElement.style.animationPlayState = 'running'
+                shape.style.animationPlayState = 'running'
+            }, HACK_TIMEOUT_TIME)
         }
     },
     mounted () {
