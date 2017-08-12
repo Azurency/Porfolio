@@ -9,7 +9,7 @@
         <article class="case">
             <section class="case__container">
                 <h2 class="case__title">Un projet scolaire</h2>
-                <p class="case__paragraph">Plûtot que de partir dans une description beaucoup trop longue du projet et des différentes demandes, je vous laisse, si vous avez le courage, 
+                <p class="case__paragraph">Plûtot que de partir dans une description beaucoup trop longue du projet et des différentes demandes, je vous laisse, si vous avez le courage 🤓, 
                     <rounded-button 
                         text="regarder le sujet" 
                         :color="darkenColor" 
