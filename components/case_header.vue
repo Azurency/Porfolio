@@ -128,12 +128,13 @@ export default {
 */
 
 .arrow {
-    padding: 5em 0em 5em 5em; /* 1 */
+    padding: 5em 10em 5em 5em; /* 1 */
     height: 100%;
     display: block;
 
     &--left {
         transform: rotate(180deg);
+        margin-left: -10em;
 
         &:hover {
             animation: $longer-transition-duration pointing_arrow--left infinite alternate;
@@ -141,6 +142,7 @@ export default {
     }
     &--right {
         transform: rotate(0deg);
+        margin-right: -10em;
 
         &:hover {
             animation: $longer-transition-duration pointing_arrow--right infinite alternate;
