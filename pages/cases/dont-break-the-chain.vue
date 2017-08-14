@@ -6,7 +6,7 @@
         <case-intro :roles="roles" :technologies="technologies" :annee="annee">
             J'ai imaginé à quoi pourrait ressembler une application mobile me permettant de suivre la méthode don't break the chain. Dans un premier temps, ce projet a été destiné à améliorer ma conception d'interface, que j'ai pu coder sur Android pendant ma 2e année d'étude informatique.
         </case-intro>
-        <article class="case">
+        <article class="case" style="visibility: hidden;" v-scroll-reveal="{ viewFactor: 0, useDelay: 'once', delay: 300 }">
             <section class="case__container">
                 <h2 class="case__title">La méthode</h2>
                 <p class="case__paragraph">Don't break the chain ⛓ est <a href="http://lifehacker.com/281626/jerry-seinfelds-productivity-secret" class="underline-hover">une méthode</a> très simple pour se motiver à mener à bien des projets, elle est utilisée et expliquée par Jerry Seinfeld.</p>
@@ -69,11 +69,11 @@
 
 <script>
 import Color from 'color'
-import { addDynamicCssRule } from '~assets/js/utils'
+import { addDynamicCssRule } from 'assets/js/utils'
 
-import CaseHeader from '~components/case_header'
-import CaseIntro from '~components/case_intro'
-import RoundedButton from '~components/rounded_button.vue'
+import CaseHeader from '~/components/case_header'
+import CaseIntro from '~/components/case_intro'
+import RoundedButton from '~/components/rounded_button.vue'
 
 export default {
     data () {
@@ -99,6 +99,36 @@ export default {
         },
         block1Color () {
             return this.block1.darken(0.55).rgb().string()
+        }
+    },
+    transition (to, from) {
+        if (from && from.name === 'index') {
+            return {
+                mode: 'out-in',
+                css: false,
+                enter (el, done) {
+                    console.log('enter case')
+                    window.scrollTo(0, 0)
+                    const elt = document.querySelector('#js-caseHeader')
+                    document.body.removeChild(elt)
+                    done()
+                },
+                leave (el, done) {
+                    console.log('leave case')
+                    done()
+                }
+            }
+        }
+        return {
+            mode: 'out-in',
+            css: false,
+            enter (el, done) {
+                window.scrollTo(0, 0)
+                done()
+            },
+            leave (el, done) {
+                done()
+            }
         }
     },
     beforeMount () {

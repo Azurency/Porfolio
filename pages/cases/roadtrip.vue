@@ -6,7 +6,7 @@
         <case-intro :roles="roles" :technologies="technologies" :annee="annee">
             À l'occasion d'un roadtrip en Angleterre avec un ami, j'ai mis en place en blog pour garder une trace de mon voyage. Bien qu'ayant fini de le coder dans le tunnel sous la Manche, j'ai pu publier des articles tous les jours en partageant nos photos et activités.
         </case-intro>
-        <article class="case">
+        <article class="case" style="visibility: hidden;" v-scroll-reveal="{ viewFactor: 0, useDelay: 'once', delay: 300 }">
             <section class="case__container">
                 <h2 class="case__title">Un blog ?</h2>
                 <p class="case__paragraph">Quand nous nous sommes décidés avec mon ami Sébastien (👋 coucou si tu passes par là) à organiser un roadtrip, nous avons bien sûr commencé par tant bien que mal essayer de planifier un itinéraire et des "endroits clefs" à visiter.</p>
@@ -81,11 +81,11 @@
 
 <script>
 import Color from 'color'
-import { addDynamicCssRule } from '~assets/js/utils'
+import { addDynamicCssRule } from 'assets/js/utils'
 
-import CaseHeader from '~components/case_header'
-import CaseIntro from '~components/case_intro'
-import RoundedButton from '~components/rounded_button.vue'
+import CaseHeader from '~/components/case_header'
+import CaseIntro from '~/components/case_intro'
+import RoundedButton from '~/components/rounded_button.vue'
 
 export default {
     data () {
@@ -111,6 +111,36 @@ export default {
         },
         block1Color () {
             return this.block1.darken(0.55).rgb().string()
+        }
+    },
+    transition (to, from) {
+        if (from && from.name === 'index') {
+            return {
+                mode: 'out-in',
+                css: false,
+                enter (el, done) {
+                    console.log('enter case')
+                    window.scrollTo(0, 0)
+                    const elt = document.querySelector('#js-caseHeader')
+                    document.body.removeChild(elt)
+                    done()
+                },
+                leave (el, done) {
+                    console.log('leave case')
+                    done()
+                }
+            }
+        }
+        return {
+            mode: 'out-in',
+            css: false,
+            enter (el, done) {
+                window.scrollTo(0, 0)
+                done()
+            },
+            leave (el, done) {
+                done()
+            }
         }
     },
     beforeMount () {

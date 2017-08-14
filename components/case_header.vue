@@ -2,12 +2,12 @@
     <header class="case-header" :style="{ backgroundColor: color }">
         <div class="case-header__container">
             <div class="case-header__nav-container">
-                <nuxt-link tag="h2" to="/" class="case-header__nav-title">
+                <nuxt-link tag="h2" to="/" class="case-header__nav-title" style="visibility: hidden;" v-scroll-reveal>
                     <a>Antoine Lassier</a>
                 </nuxt-link>
                 <navigation class="case-header__nav" :color="this.darkenColor"/>
             </div>
-            <div class="case-header__content">
+            <div class="case-header__content" style="visibility: hidden;" v-scroll-reveal="{ useDelay: 'once', delay: 100 }">
                 <nuxt-link :to="this.prevCase" class="arrow arrow--left" :style="{ color: this.darkenColor }">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24">
                         <polyline fill="none" stroke="currentColor" stroke-width="3" points="0 20 10 10 0 0" transform="translate(2 2)" stroke-linecap="round" stroke-linejoin="round"/>
@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import Navigation from '~components/navigation'
+import Navigation from '~/components/navigation'
 import Color from 'color'
 
 export default {

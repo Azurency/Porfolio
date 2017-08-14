@@ -47,6 +47,11 @@ module.exports = {
         },
         vendor: ['animejs', 'scrollreveal']
     },
+    router: {
+        scrollBehavior: function (to, from, savedPosition) {
+            return { x: 0, y: window.pageYOffset }
+        }
+    },
     plugins : [{ src: '~plugins/vue-scroll-reveal', ssr: false }, 
                 { src: '~plugins/vue-tippy', ssr: false }]
 }

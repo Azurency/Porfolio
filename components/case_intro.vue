@@ -1,5 +1,5 @@
 <template>
-    <div class="case-intro">
+    <div class="case-intro" style="visibility: hidden;" v-scroll-reveal="{ useDelay: 'once', delay: 200 }">
         <div class="case-intro__container">
             <div class="case-intro__item case-intro__item--large">
                 <h5 class="case-intro__title">Introduction</h5>
@@ -51,7 +51,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/scss/_variables.scss';
+@import 'assets/scss/_variables.scss';
 
 /* Case intro
    ========================================================================== */

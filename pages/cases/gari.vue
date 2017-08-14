@@ -7,7 +7,7 @@
         <case-intro :roles="roles" :technologies="technologies" :annee="annee">
             Pour remplacer leurs outil Excel existant, Keolis Orléans m'a demandé de développer de A à Z un logiciel d'affectation de véhicules à des services. J'ai eu carte blanche pour le choix du design et des technologies.
         </case-intro>
-        <article class="case">
+        <article class="case" style="visibility: hidden;" v-scroll-reveal="{ viewFactor: 0, useDelay: 'once', delay: 300 }">
             <section class="case__container">
                 <h2 class="case__title">Étude du besoin</h2>
                 <p class="case__paragraph">Les entreprises de transport doivent affecter des véhicules à des services (heure de début, une heure de fin, une ligne, un dépôt et un type de véhicule). Par exemple, un service représente le fait que sur une Ligne 1 un bus de type standard doit être affecté depuis le dépôt A à partir de 7h00 et que ce véhicule rentrera à 17h00.</p>
@@ -144,11 +144,11 @@
 
 <script>
 import Color from 'color'
-import { addDynamicCssRule } from '~assets/js/utils'
+import { addDynamicCssRule } from 'assets/js/utils'
 
-import CaseHeader from '~components/case_header'
-import CaseIntro from '~components/case_intro'
-import RoundedButton from '~components/rounded_button.vue'
+import CaseHeader from '~/components/case_header'
+import CaseIntro from '~/components/case_intro'
+import RoundedButton from '~/components/rounded_button.vue'
 
 export default {
     data () {
@@ -183,6 +183,36 @@ export default {
         },
         block2Color () {
             return this.block2.darken(0.7).rgb().string()
+        }
+    },
+    transition (to, from) {
+        if (from && from.name === 'index') {
+            return {
+                mode: 'out-in',
+                css: false,
+                enter (el, done) {
+                    console.log('enter case')
+                    window.scrollTo(0, 0)
+                    const elt = document.querySelector('#js-caseHeader')
+                    document.body.removeChild(elt)
+                    done()
+                },
+                leave (el, done) {
+                    console.log('leave case')
+                    done()
+                }
+            }
+        }
+        return {
+            mode: 'out-in',
+            css: false,
+            enter (el, done) {
+                window.scrollTo(0, 0)
+                done()
+            },
+            leave (el, done) {
+                done()
+            }
         }
     },
     beforeMount () {

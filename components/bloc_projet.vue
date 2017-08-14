@@ -6,7 +6,7 @@
                 <p class="project__description">
                     <slot></slot>
                 </p>
-                <nuxt-link :to="this.link" ref="link" class="project__link" :style="{ color: linkColor }">
+                <span class="project__link" :style="{ color: linkColor }">
                     Voir plus
                     <svg class="project__arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="11" viewBox="0 0 14 11">
                         <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round">
@@ -14,7 +14,7 @@
                             <polyline points="7.5 0 12 4.5 7.5 9" />
                         </g>
                     </svg>
-                </nuxt-link>
+                </span>
             </div>
             <div class="project__image">
                 <slot name="image"></slot>
@@ -34,7 +34,7 @@ export default {
         },
         link: {
             type: String,
-            required: true
+            required: false
         },
         title: {
             type: String,
@@ -55,14 +55,14 @@ export default {
     },
     methods: {
         gotoProject () {
-            this.$router.push(this.link)
+            this.$emit('navigate', this.$el, this.link)
         }
     }
 }
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/scss/_variables.scss';
+@import 'assets/scss/_variables.scss';
 
 /* Bloc Projet
    ========================================================================== */

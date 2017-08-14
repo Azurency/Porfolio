@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="js-body">
         <index-header/>
         <section class="index-section">
             <h3 class="index-section__title" style="visibility: hidden;" v-scroll-reveal="{ delay: 600 }" >Actuellement</h3>
@@ -29,24 +29,24 @@
             </icon-link>
         </section>
         <section class="index-section">
-            <h3 class="index-section__title" v-scroll-reveal="{ delay: 700 }">Mon travail</h3>
-            <block-projet title="G.A.R.I." color="rgba(165, 230, 237, 1.00)" link="/cases/gari" style="visibility: hidden;" v-scroll-reveal="{ delay: 1050 }">
+            <h3 class="index-section__title" style="visibility: hidden;" v-scroll-reveal="{ delay: 700 }">Mon travail</h3>
+            <block-projet ref="test" title="G.A.R.I." color="rgba(165, 230, 237, 1.00)" @navigate="gotoLink" link="/cases/gari" style="visibility: hidden;" v-scroll-reveal="{ delay: 1050 }">
                 Création d'un logiciel de gestion de l'affectation de services à des véhicules pour les réseaux de transport.
                 <img src="~assets/projet_gari.png" alt="Capture G.A.R.I. v1.5" slot="image" height="100%">
             </block-projet>
-            <block-projet title="Macollec-capsule" color="rgba(246, 142, 105, 1.00)" link="/cases/ma-collec" style="visibility: hidden;" v-scroll-reveal="{ delay: 1200 }">
+            <block-projet title="Macollec-capsule" color="rgba(246, 142, 105, 1.00)" @navigate="gotoLink" link="/cases/ma-collec" style="visibility: hidden;" v-scroll-reveal="{ delay: 1200 }">
                 Réalisation du design d'un site de gestion d'une collection de capsules de champagne.
                 <img src="~assets/projet_macollec.png" alt="Capture Macollec-Capsule" slot="image" height="100%">
             </block-projet>
-            <block-projet title="Roadtrip blog" color="rgba(157, 205, 243, 1.00)" link="/cases/roadtrip" style="visibility: hidden;" v-scroll-reveal="{ delay: 1350 }">
+            <block-projet title="Roadtrip blog" color="rgba(157, 205, 243, 1.00)" @navigate="gotoLink" link="/cases/roadtrip" style="visibility: hidden;" v-scroll-reveal="{ delay: 1350 }">
                 À l'occasion d'un roadtrip en Angleterre, j'ai mis en place en blog pour garder une trace de mon voyage.
                 <img src="~assets/projet_roadtrip.png" alt="Illustration self-portrait et capture article" slot="image" height="100%">
             </block-projet>
-            <block-projet title="Handball team manager" color="rgba(186, 234, 138, 1.00)" link="/cases/handball-manager" style="visibility: hidden;" v-scroll-reveal="{ delay: 1500 }">
+            <block-projet title="Handball team manager" color="rgba(186, 234, 138, 1.00)" @navigate="gotoLink" link="/cases/handball-manager" style="visibility: hidden;" v-scroll-reveal="{ delay: 1500 }">
                 Lors d'un projet d'étude, j'ai créer un logiciel de gestion d'un championat de handball.
                 <img src="~assets/projet_handball.png" alt="Captures Handball Manager" slot="image" height="100%">
             </block-projet>
-            <block-projet title="Don't break the chain" color="rgba(218, 212, 209, 1.00)" link="/cases/dont-break-the-chain" style="visibility: hidden;" v-scroll-reveal="{ delay: 1650 }">
+            <block-projet title="Don't break the chain" color="rgba(218, 212, 209, 1.00)" @navigate="gotoLink" link="/cases/dont-break-the-chain" style="visibility: hidden;" v-scroll-reveal="{ delay: 1650 }">
                 Design d'un prototype d'application iOS et développement d'un version android pour un projet scolaire.
                 <img src="~assets/projet_dontbreakthechain.png" alt="Design de Don't break the chain" slot="image" height="100%">
             </block-projet>
@@ -221,11 +221,11 @@
 </template>
 
 <script>
-import IndexHeader from '~components/header.vue'
-import IconLink from '~components/icon_link.vue'
-import BlockProjet from '~components/bloc_projet.vue'
-import CallButton from '~components/call_action_button.vue'
-import StatBlock from '~components/stat_block.vue'
+import IndexHeader from '~/components/header.vue'
+import IconLink from '~/components/icon_link.vue'
+import BlockProjet from '~/components/bloc_projet.vue'
+import CallButton from '~/components/call_action_button.vue'
+import StatBlock from '~/components/stat_block.vue'
 
 export default {
     components: {
@@ -234,12 +234,86 @@ export default {
         BlockProjet,
         CallButton,
         StatBlock
+    },
+    transition: {
+        mode: 'out-in',
+        css: false,
+        enter (el, done) {
+            console.log('enter')
+            done()
+        },
+        leave (elt, done) {
+            console.log('leave')
+            console.log(document.querySelector('#navanim'))
+            document.querySelector('.js-body').style.opacity = 0
+            const el = document.querySelector('#navanim')
+
+            const cumulativeOffset = function (element) {
+                var top = 0
+                var left = 0
+                do {
+                    top += element.offsetTop || 0
+                    left += element.offsetLeft || 0
+                    element = element.offsetParent
+                } while (element)
+
+                return {
+                    top: top,
+                    left: left
+                }
+            }
+            const doc = document.documentElement
+            const left = (window.pageXOffset || doc.scrollLeft) - (doc.clientLeft || 0)
+            const top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0)
+            const height = el.clientHeight
+            const animatedEl = document.createElement('div')
+            const translationDuration = 500
+            // const elRect = el.getBoundingClientRect()
+
+            animatedEl.style.position = 'absolute'
+            animatedEl.style.zIndex = '999'
+            animatedEl.style.backgroundColor = el.firstChild.style.backgroundColor
+            animatedEl.style.transition = 'all ' + translationDuration + 'ms'
+            animatedEl.style.width = el.clientWidth + 'px'
+            animatedEl.style.height = height + 'px'
+            animatedEl.style.top = cumulativeOffset(el).top + 'px'
+            animatedEl.style.left = cumulativeOffset(el).left + 'px'
+            animatedEl.setAttribute('id', 'js-caseHeader')
+
+            document.body.appendChild(animatedEl)
+            el.firstChild.style.transition = 'none'
+            el.firstChild.style.opacity = 0
+
+            // Flush style and force layout to compute animatedEl
+            window.getComputedStyle(animatedEl).opacity
+
+            animatedEl.style.width = '100vw'
+            animatedEl.style.height = '350px'
+            animatedEl.style.top = top + 'px'
+            animatedEl.style.left = left + 'px'
+            setTimeout(() => {
+                el.removeAttribute('id')
+                done()
+            }, translationDuration)
+            // done()
+        }
+    },
+    methods: {
+        gotoLink (el, link) {
+            el.setAttribute('id', 'navanim')
+            this.$router.push(link)
+        }
     }
 }
 </script>
 
 <style lang="scss">
-@import '~assets/scss/_variables.scss';
+@import 'assets/scss/_variables.scss';
+
+.js-body {
+    transition: opacity 0.5s;
+    opacity: 1;
+}
 
 /* Index
    ========================================================================== */

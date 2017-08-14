@@ -51,9 +51,9 @@
 </template>
 
 <script>
-import Navigation from '~components/navigation.vue'
-import { getRandomInt } from '~assets/js/utils.js'
-const HACK_TIMEOUT_TIME = 10
+import Navigation from '~/components/navigation.vue'
+import { getRandomInt } from 'assets/js/utils.js'
+const HACK_TIMEOUT_TIME = 50
 
 export default {
     components: {
@@ -160,7 +160,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~assets/scss/_variables.scss';
+@import 'assets/scss/_variables.scss';
 
 /* Index Header
    ========================================================================== */

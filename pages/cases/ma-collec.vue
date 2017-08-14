@@ -6,7 +6,7 @@
         <case-intro :roles="roles" :technologies="technologies" :annee="annee">
             J'ai réalisé le design d'un site de collection de capsules de champagne, du choix de la police au logo en passant par le design des pages et des interactions. Le tout en communiquant à chaque étape avec le créateur du site.
         </case-intro>
-        <article class="case">
+        <article class="case" style="visibility: hidden;" v-scroll-reveal="{ viewFactor: 0, useDelay: 'once', delay: 300 }">
             <section class="case__container">
                 <h2 class="case__title">Recherches et besoins</h2>
                 <p class="case__paragraph">Macollec-capsule est un projet qui a démarré dans l'optique de proposer une alternative aux classiques « livres » de collection de capsules de champagne. Le site devait permettre aux utilisateurs de gérer plus facilement leur collection et permettre de meilleures interactions avec les autres collectionneurs.</p>
@@ -116,10 +116,10 @@
 
 <script>
 import Color from 'color'
-import { addDynamicCssRule } from '~assets/js/utils'
+import { addDynamicCssRule } from 'assets/js/utils'
 
-import CaseHeader from '~components/case_header'
-import CaseIntro from '~components/case_intro'
+import CaseHeader from '~/components/case_header'
+import CaseIntro from '~/components/case_intro'
 
 export default {
     data () {
@@ -144,6 +144,36 @@ export default {
         },
         block1Color () {
             return this.block1.darken(0.55).rgb().string()
+        }
+    },
+    transition (to, from) {
+        if (from && from.name === 'index') {
+            return {
+                mode: 'out-in',
+                css: false,
+                enter (el, done) {
+                    console.log('enter case')
+                    window.scrollTo(0, 0)
+                    const elt = document.querySelector('#js-caseHeader')
+                    document.body.removeChild(elt)
+                    done()
+                },
+                leave (el, done) {
+                    console.log('leave case')
+                    done()
+                }
+            }
+        }
+        return {
+            mode: 'out-in',
+            css: false,
+            enter (el, done) {
+                window.scrollTo(0, 0)
+                done()
+            },
+            leave (el, done) {
+                done()
+            }
         }
     },
     beforeMount () {

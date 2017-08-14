@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import PageFooter from '~components/footer.vue'
+import PageFooter from '~/components/footer.vue'
 export default {
     components: {
         PageFooter
@@ -21,6 +21,6 @@ export default {
 </script>
 
 <style lang="scss">
-    @import '~assets/scss/main.scss'; // Hack pour prefixer le scss sans configurer nuxt.config.js
+@import 'assets/scss/main.scss'; // Hack pour prefixer le scss sans configurer nuxt.config.js
 </style>
 

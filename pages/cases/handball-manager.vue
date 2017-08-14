@@ -6,7 +6,7 @@
         <case-intro :roles="roles" :technologies="technologies" :annee="annee">
             Lors de ma première année d'étude informatique, nous avons eu comme projet de fin d'année la réalisation d'une application de gestion d'un championnat de handball en Java. C'était un projet en équipe dans laquelle j'ai pris le role de chef de projet.
         </case-intro>
-        <article class="case">
+        <article class="case" style="visibility: hidden;" v-scroll-reveal="{ viewFactor: 0, useDelay: 'once', delay: 300 }">
             <section class="case__container">
                 <h2 class="case__title">Un projet scolaire</h2>
                 <p class="case__paragraph">Plûtot que de partir dans une description beaucoup trop longue du projet et des différentes demandes, je vous laisse, si vous avez le courage 🤓, 
@@ -118,11 +118,11 @@
 
 <script>
 import Color from 'color'
-import { addDynamicCssRule } from '~assets/js/utils'
+import { addDynamicCssRule } from 'assets/js/utils'
 
-import CaseHeader from '~components/case_header'
-import CaseIntro from '~components/case_intro'
-import RoundedButton from '~components/rounded_button.vue'
+import CaseHeader from '~/components/case_header'
+import CaseIntro from '~/components/case_intro'
+import RoundedButton from '~/components/rounded_button.vue'
 
 export default {
     data () {
@@ -148,6 +148,36 @@ export default {
         },
         block1Color () {
             return this.block1.darken(0.55).rgb().string()
+        }
+    },
+    transition (to, from) {
+        if (from && from.name === 'index') {
+            return {
+                mode: 'out-in',
+                css: false,
+                enter (el, done) {
+                    console.log('enter case')
+                    window.scrollTo(0, 0)
+                    const elt = document.querySelector('#js-caseHeader')
+                    document.body.removeChild(elt)
+                    done()
+                },
+                leave (el, done) {
+                    console.log('leave case')
+                    done()
+                }
+            }
+        }
+        return {
+            mode: 'out-in',
+            css: false,
+            enter (el, done) {
+                window.scrollTo(0, 0)
+                done()
+            },
+            leave (el, done) {
+                done()
+            }
         }
     },
     beforeMount () {

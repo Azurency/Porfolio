@@ -10,7 +10,7 @@
 
 <script>
 import Color from 'color'
-import { addDynamicCssRule } from '~assets/js/utils'
+import { addDynamicCssRule } from '~/assets/js/utils'
 
 export default {
     props: {
@@ -32,7 +32,7 @@ export default {
 
 
 <style lang="scss">
-@import '~assets/scss/_variables.scss';
+@import 'assets/scss/_variables.scss';
 
 /* Navigation
    ========================================================================== */
