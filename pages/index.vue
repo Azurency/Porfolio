@@ -106,7 +106,7 @@
             <div class="index-section index-section--center" id="contact">
                 <h5 class="index-section__leadtitle" v-scroll-reveal>Disponible en freelance</h5>
                 <h3 class="index-section__title index-section__title--borderless" v-scroll-reveal>Envie de travailler avec moi ?<br>Je suis toujours intéréssé par de nouveaux projets.</h3>
-                <call-button text="Conctactez moi" link="#" color="#2588C4" v-scroll-reveal>
+                <call-button text="Conctactez moi" link="mailto:antoine.lassier@gmail.com" color="#2588C4" v-scroll-reveal>
                     <template slot="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
                             <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round">
