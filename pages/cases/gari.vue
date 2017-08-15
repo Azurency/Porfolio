@@ -21,7 +21,7 @@
                 </ul>
             </section>
             <div class="case__img-container">
-                <img src="~assets/case-gari-1.png" alt="capture GARI 1" class="case__img">
+                <img src="~assets/case-gari-1.jpg" alt="Écran de gestion des indisponibilités" class="case__img case__img--shadow" width="960px" >
             </div>
             <section class="case__container">
                 <p class="case__paragraph">Le logiciel devait donc être en mesure de :</p>
@@ -44,12 +44,12 @@
                     <p class="case__paragraph">Après cette phrase d’audit, j’ai pu commencer la conception avec des diagrammes de cas d’utilisation, des modélisations MCD et diagrammes de classe UML.</p>
                 </section>
                 <div class="case__flex">
-                    <div class="case__flex-item">
-                        <img src="~assets/case-gari-2.png" alt="capture GARI 2" class="case__img">
-                        <p class="case__legend">MCD des service et des liens avec les autres tables</p>
+                    <div class="case__flex-item case__flex-item--grid">
+                        <img src="~assets/case-gari-2.jpg" alt="MCD services" class="case__img case__img--shadow" height="300px">
+                        <p class="case__legend">MCD des services et des liens avec les autres tables</p>
                     </div>
-                    <div class="case__flex-item">
-                        <img src="~assets/case-gari-3.png" alt="capture GARI 3" class="case__img">
+                    <div class="case__flex-item case__flex-item--grid">
+                        <img src="~assets/case-gari-3.jpg" alt="MCD ligne" class="case__img case__img--shadow" height="300px">
                         <p class="case__legend">MCD ligne et groupe de ligne</p>
                     </div>
                 </div>
@@ -59,11 +59,11 @@
                 <p class="case__paragraph">J’ai aussi dessiné des maquettes de l’interface sur papier.</p>
             </section>
             <div class="case__flex">
-                <div class="case__flex-item">
-                    <img src="~assets/case-gari-4.png" alt="capture GARI 4" class="case__img">
+                <div class="case__flex-item case__flex-item--grid">
+                    <img src="~assets/case-gari-4.jpg" alt="Maquette 1" class="case__img case__img--shadow" height="600px">
                 </div>
-                <div class="case__flex-item">
-                    <img src="~assets/case-gari-5.png" alt="capture GARI 5" class="case__img">
+                <div class="case__flex-item case__flex-item--grid">
+                    <img src="~assets/case-gari-5.jpg" alt="Maquette 2" class="case__img case__img--shadow" height="600px">
                 </div>
             </div>
             <div class="case__colored-block" :style="{ background: block2BackgroundColor, color: block2Color }">
@@ -107,16 +107,16 @@
             </section>
             <div class="case__flex">
                 <div class="case__flex-item">
-                    <img src="~assets/case-gari-6.png" alt="capture GARI 6" class="case__img">
+                    <img src="~assets/case-gari-6.jpg" alt="Écran véhicules" class="case__img case__img--shadow" width="600px">
                     <p class="case__legend">Interface de gestion des véhicules avec des onglets et un code couleur</p>
                 </div>
                 <div class="case__flex-item" style="margin-left:-160px;">
-                    <img src="~assets/case-gari-7.png" alt="capture GARI 7" class="case__img">
+                    <img src="~assets/case-gari-7.jpg" alt="Écran coupures" class="case__img case__img--shadow" width="450px">
                     <p class="case__legend">Écran des coupures</p>
                 </div>
             </div>
             <div class="case__img-container">
-                <img src="~assets/case-gari-8.png" alt="capture GARI 8" class="case__img">
+                <img src="~assets/case-gari-8.jpg" alt="Écran affectation" class="case__img case__img--shadow" width="960px" style="margin-top: 1em;">
                 <p class="case__legend">Écran principal, l'affectation. Les dépots peuvent etre différencier avec les couleurs différentes des lignes, les types de véhicules ont tous un code couleur.</p>
             </div>
             <section class="case__container" style="margin-top: 3em">
@@ -124,7 +124,7 @@
                 <p class="case__paragraph">Depuis la v1.5, les choix proposer dans les modals sont plus clair pour que l'utilisateur ait une idée précise de l'action qu'il va effectuer, plus de "Ok" et "annuler" sans contexte.</p>
             </section>
             <div class="case__img-container">
-                <img src="~assets/case-gari-9.png" alt="capture GARI 9" class="case__img">
+                <img src="~assets/case-gari-9.jpg" alt="Fenetre modale de confirmation" class="case__img case__img--shadow" width="500px">
                 <p class="case__legend">Oui, supprimer ou Non, garder cette indisponibilité = un choix clair.</p>
             </div>
             <section class="case__container" style="margin-top: 3em">
