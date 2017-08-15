@@ -69,12 +69,25 @@ export default {
         flex-direction: column;
         height: 100%;
         @include container;
+
+        @include respond-to($phone) {
+            padding-left: .5em;
+            padding-right: .5em;
+        }
     }
 
     &__nav-container {
         display: flex;
         justify-content: space-between;
         padding: 2em 0 0 0;
+
+        @include respond-to($phone) {
+            flex: 1 0 auto;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1em 0 0 0;
+        }
     }
 
     &__nav-title {
@@ -97,6 +110,10 @@ export default {
         color: $white;
         font-size: 20px;
         max-width: 666px;
+
+        @include respond-to($phone) {
+            font-size: 18px;
+        }
     }
 }
 
@@ -147,6 +164,11 @@ export default {
         &:hover {
             animation: $longer-transition-duration pointing_arrow--right infinite alternate;
         }
+    }
+
+    @include respond-to($phone) {
+        padding: 0 0 0 2em;
+        margin: 0;
     }
 }
 </style>

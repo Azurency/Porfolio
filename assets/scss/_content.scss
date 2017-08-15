@@ -104,6 +104,10 @@ nav ul {
         &--small-shadow {
             box-shadow: 0 0 15px 0 rgba(0,0,0,0.10);
         }
+
+        @include respond-to($phone) {
+            width: 100%;
+        }
     }
 
     &__list {
@@ -157,6 +161,10 @@ nav ul {
             margin: -1em 0 0 0;
             justify-content: flex-start;
             align-items: flex-start; 
+        }
+
+        @include respond-to($phone) {
+            align-items: flex-start;
         }
     }
 

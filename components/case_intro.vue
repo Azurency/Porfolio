@@ -63,6 +63,11 @@ export default {
         display: flex;
         @include container;
         padding: 2em;
+
+        @include respond-to($phone) {
+            flex-wrap: wrap;
+            padding-bottom: 1em;
+        }
     }
 
     &__title {
@@ -98,6 +103,10 @@ export default {
 
         &:last-child {
             padding-right: 0;
+        }
+
+        @include respond-to($phone) {
+            padding: 1em 1em 0 0;
         }
     }
 }
