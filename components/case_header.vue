@@ -146,7 +146,6 @@ export default {
 
 .arrow {
     padding: 5em 10em 5em 5em; /* 1 */
-    height: 100%;
     display: block;
 
     &--left {

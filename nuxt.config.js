@@ -3,17 +3,19 @@ module.exports = {
     ** Headers of the page
     */
     head: {
-        title: 'starter',
+        titleTemplate: '%s - Antoine Lassier',
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+            { name: 'author', content: 'Antoine Lassier' },
+            { hid: 'keywords', name: 'keywords', content: 'développement,design,site web,mobile,responsive,réalisation,site,créer,orléans,paris,portfolio,antoine lassier,lassier,designer,graphiste,charte graphique,gari,gariapp,gari app,développeur,python' },
+            { hid: 'description', name: 'description', content: 'Porfolio d\'Antoine Lassier, développeur et designer web et mobile. Disponible en freelance pour votre création de site web ou applications mobiles à Orléans, Paris et partout en France.' }
         ],
         script: [
             { src: 'https://use.typekit.net/txv3mea.js' }
         ],
         link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+            { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
         ]
     },
     css: [
@@ -55,6 +57,9 @@ module.exports = {
             return { x: 0, y: window.pageYOffset }
         }
     },
-    plugins : [{ src: '~plugins/vue-scroll-reveal', ssr: false }, 
-                { src: '~plugins/vue-tippy', ssr: false }]
+    plugins : [
+        { src: '~plugins/vue-scroll-reveal', ssr: false }, 
+        { src: '~plugins/vue-tippy', ssr: false },
+        { src: '~plugins/ga.js', ssr: false }
+    ]
 }

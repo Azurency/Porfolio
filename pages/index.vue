@@ -237,6 +237,9 @@ export default {
         CallButton,
         StatBlock
     },
+    head: {
+        title: 'Accueil'
+    },
     transition: {
         mode: 'out-in',
         css: false,

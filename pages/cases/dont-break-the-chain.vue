@@ -101,6 +101,14 @@ export default {
             return this.block1.darken(0.55).rgb().string()
         }
     },
+    head () {
+        return {
+            title: 'Don\'t break the chain',
+            meta: [
+                { hid: 'description', name: 'description', content: 'Étude de concept d\'une application suivant le principe don\'t break the chain. Du design à un projet de développement sur Android en Java.' }
+            ]
+        }
+    },
     transition (to, from) {
         if (from && from.name === 'index') {
             return {

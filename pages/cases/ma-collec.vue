@@ -146,6 +146,14 @@ export default {
             return this.block1.darken(0.55).rgb().string()
         }
     },
+    head () {
+        return {
+            title: 'Macollec-capsule',
+            meta: [
+                { hid: 'description', name: 'description', content: 'Étude de la réalisation du design du site Macollec-capsule, une site de gestion de collection de capsule de champagne pour les placomusophiles.' }
+            ]
+        }
+    },
     transition (to, from) {
         if (from && from.name === 'index') {
             return {

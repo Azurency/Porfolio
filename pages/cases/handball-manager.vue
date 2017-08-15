@@ -150,6 +150,14 @@ export default {
             return this.block1.darken(0.55).rgb().string()
         }
     },
+    head () {
+        return {
+            title: 'Handball Team Manager',
+            meta: [
+                { hid: 'description', name: 'description', content: 'Étude du développement de l\'application Java Handball Team Manager créée en 2eme année d\'étude à l\'iut d\'Orléans. De la création des maquettes à l\'application JavaFx en passant par les maquettes.' }
+            ]
+        }
+    },
     transition (to, from) {
         if (from && from.name === 'index') {
             return {

@@ -185,6 +185,14 @@ export default {
             return this.block2.darken(0.7).rgb().string()
         }
     },
+    head () {
+        return {
+            title: 'G.A.R.I.',
+            meta: [
+                { hid: 'description', name: 'description', content: 'Étude du développement de l\'application web G.A.R.I., gari app. Créée pour gérer l\'affectation de véhicules à des services dans les réseaux de transport comme Keolis ou Transdev.' }
+            ]
+        }
+    },
     transition (to, from) {
         if (from && from.name === 'index') {
             return {

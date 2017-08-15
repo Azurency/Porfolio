@@ -113,6 +113,14 @@ export default {
             return this.block1.darken(0.55).rgb().string()
         }
     },
+    head () {
+        return {
+            title: 'Roadtrip',
+            meta: [
+                { hid: 'description', name: 'description', content: 'Étude de la réalisation d\'un blog statique avec Jekyll pour partager et pouvoir retracer le parcours de mon roadtrip en Angleterre.' }
+            ]
+        }
+    },
     transition (to, from) {
         if (from && from.name === 'index') {
             return {
