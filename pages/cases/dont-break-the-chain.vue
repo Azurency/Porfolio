@@ -20,11 +20,11 @@
             </section>
             <div class="case__flex">
                 <div class="case__flex-item case__flex-item--grid">
-                    <img src="~assets/case-chain-2.png" alt="Catalogue non connecté" class="case__img" width="450px">
+                    <img src="~assets/case-chain-2.jpg" alt="Catalogue non connecté" class="case__img" width="450px">
                     <p class="case__legend">Test de différentes variations de dégradés, personalisable pour chaque chaine.</p>
                 </div>
                 <div class="case__flex-item case__flex-item--grid">
-                    <img src="~assets/case-chain-1.svg" alt="Ajout d'un commentaire" class="case__img" width="300px">
+                    <img src="~assets/case-chain-1.jpg" alt="Ajout d'un commentaire" class="case__img" width="300px">
                     <p class="case__legend">L'écran d'une chaine, ici "Write something".</p>
                 </div>
             </div>
@@ -36,11 +36,11 @@
             </section>
             <div class="case__flex">
                 <div class="case__flex-item case__flex-item--grid">
-                    <img src="~assets/case-chain-3.svg" alt="Catalogue non connecté" class="case__img" width="300px">
+                    <img src="~assets/case-chain-3.jpg" alt="Catalogue non connecté" class="case__img" width="300px">
                     <p class="case__legend">Concepts d'affichage de toutes les chaines en forme de liste.</p>
                 </div>
                 <div class="case__flex-item case__flex-item--grid">
-                    <img src="~assets/case-chain-4.svg" alt="Ajout d'un commentaire" class="case__img" width="300px">
+                    <img src="~assets/case-chain-4.jpg" alt="Ajout d'un commentaire" class="case__img" width="300px">
                     <p class="case__legend">Toutes les chaines en forme de cartes.</p>
                 </div>
             </div>
