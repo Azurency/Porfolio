@@ -40,7 +40,7 @@
                 <p class="case__paragraph">Nous avons commencé l'analyse par la réalisation de diagrammes UML. Le diagramme de cas d'utilisation nous a permis de bien cerner les attentes des utilisateurs ciblés par chaque module.</p>
             </section>
             <div class="case__img-container">
-                <img src="~assets/case-handball-1.png" alt="Diagramme des cas d'utilisation" class="case__img" width="500px">
+                <img src="~assets/case-handball-1.jpg" alt="Diagramme des cas d'utilisation" class="case__img" width="500px">
                 <p class="case__legend">Le diagramme UML. On voit rapidement quelles sont les fonctionnalités principales et celles qui en découlent.</p>
             </div>
             <section class="case__container">
@@ -67,18 +67,18 @@
             </section>
             <div class="case__flex">
                 <div class="case__flex-item case__flex-item--grid">
-                    <img src="~assets/case-handball-5.png" alt="Sélection des dates" class="case__img case__img--shadow" width="550px">
+                    <img src="~assets/case-handball-5.jpg" alt="Sélection des dates" class="case__img case__img--shadow" width="550px">
                 </div>
                 <div class="case__flex-item case__flex-item--grid">
-                    <img src="~assets/case-handball-6.png" alt="Modification équipes" class="case__img case__img--shadow" width="550px">
+                    <img src="~assets/case-handball-6.jpg" alt="Modification équipes" class="case__img case__img--shadow" width="550px">
                 </div>
             </div>
             <div class="case__flex">
                 <div class="case__flex-item case__flex-item--grid">
-                    <img src="~assets/case-handball-7.png" alt="Résumé du championnat" class="case__img case__img--shadow" width="550px">
+                    <img src="~assets/case-handball-7.jpg" alt="Résumé du championnat" class="case__img case__img--shadow" width="550px">
                 </div>
                 <div class="case__flex-item case__flex-item--grid">
-                    <img src="~assets/case-handball-8.png" alt="gestion du championnat" class="case__img case__img--shadow" width="550px">
+                    <img src="~assets/case-handball-8.jpg" alt="gestion du championnat" class="case__img case__img--shadow" width="550px">
                 </div>
             </div>
             <div class="case__colored-block" :style="{ background: block1BackgroundColor, color: block1Color }">
@@ -87,7 +87,7 @@
                     <p class="case__paragraph">L'application a été codée en Java en suivant le principe MVC (Modèle Vue Contrôleur) qui permet de rendre le code plus modulaire. Nous avons aussi décidé d'utiliser <b>JavaFX</b> pour l'interface (à l'époque, JavaFX était assez récent et nous avions appris à utiliser swing en cours).</p>
                 </section>
                 <div class="case__img-container">
-                    <img src="~assets/case-handball-9.png" alt="Arhcitecture MVC" class="case__img case__img--shadow" width="300px">
+                    <img src="~assets/case-handball-9.jpg" alt="Arhcitecture MVC" class="case__img case__img--shadow" width="300px">
                     <p class="case__legend">Arborescence de fichiers. On voit le découpage des classes suivant le modèle MVC</p>
                 </div>
                 <section class="case__container">
