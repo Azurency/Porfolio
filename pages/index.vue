@@ -221,6 +221,8 @@
 </template>
 
 <script>
+import { cumulativeOffset } from 'assets/js/utils'
+
 import IndexHeader from '~/components/header.vue'
 import IconLink from '~/components/icon_link.vue'
 import BlockProjet from '~/components/bloc_projet.vue'
@@ -243,59 +245,54 @@ export default {
             done()
         },
         leave (elt, done) {
-            console.log('leave')
-            console.log(document.querySelector('#navanim'))
+            // Réduction de l'opacité de l'index
             document.querySelector('.js-body').style.opacity = 0
-            const el = document.querySelector('#navanim')
 
-            const cumulativeOffset = function (element) {
-                var top = 0
-                var left = 0
-                do {
-                    top += element.offsetTop || 0
-                    left += element.offsetLeft || 0
-                    element = element.offsetParent
-                } while (element)
+            const selectedCase = document.querySelector('#navanim')
+            const transitionDuration = 500
 
-                return {
-                    top: top,
-                    left: left
-                }
-            }
+            // Calcul de la position actuelle du top
             const doc = document.documentElement
-            const left = (window.pageXOffset || doc.scrollLeft) - (doc.clientLeft || 0)
             const top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0)
-            const height = el.clientHeight
+
+            // Calcul des offsets top et left de la case qui a été cliquée
+            const offset = cumulativeOffset(selectedCase)
+
+            // Création d'un nouvel élément pour la transition
             const animatedEl = document.createElement('div')
-            const translationDuration = 500
-            // const elRect = el.getBoundingClientRect()
 
             animatedEl.style.position = 'absolute'
             animatedEl.style.zIndex = '999'
-            animatedEl.style.backgroundColor = el.firstChild.style.backgroundColor
-            animatedEl.style.transition = 'all ' + translationDuration + 'ms'
-            animatedEl.style.width = el.clientWidth + 'px'
-            animatedEl.style.height = height + 'px'
-            animatedEl.style.top = cumulativeOffset(el).top + 'px'
-            animatedEl.style.left = cumulativeOffset(el).left + 'px'
+            animatedEl.style.backgroundColor = selectedCase.firstChild.style.backgroundColor
+            animatedEl.style.transition = 'all ' + transitionDuration + 'ms cubic-bezier(.19,.91,.66,.99)'
+            animatedEl.style.width = selectedCase.clientWidth + 'px'
+            animatedEl.style.height = selectedCase.clientHeight + 'px'
+            animatedEl.style.top = offset.top + 'px'
+            animatedEl.style.left = offset.left + 'px'
+            animatedEl.style.transformOrigin = '50% top 0'
             animatedEl.setAttribute('id', 'js-caseHeader')
 
             document.body.appendChild(animatedEl)
-            el.firstChild.style.transition = 'none'
-            el.firstChild.style.opacity = 0
 
-            // Flush style and force layout to compute animatedEl
+            // Cacher la case qui a été cliqué (elle est remplacée par le nouvel élément)
+            selectedCase.firstChild.style.transition = 'none'
+            selectedCase.firstChild.style.opacity = 0
+
+            // Flush du style et mise en forme de l'animatedEl
             window.getComputedStyle(animatedEl).opacity
 
-            animatedEl.style.width = '100vw'
-            animatedEl.style.height = '350px'
-            animatedEl.style.top = top + 'px'
-            animatedEl.style.left = left + 'px'
+            // Transition vers la case study
+            const translateY = 'translateY(' + (top - offset.top) + 'px)'
+            const scaleX = 'scaleX(' + window.innerWidth / selectedCase.clientWidth + ')'
+            const scaleY = 'scaleY(' + 350 / selectedCase.clientHeight + ')'
+
+            animatedEl.style.transform = translateY + ' ' + scaleX + ' ' + scaleY
+
+            // Changement de page après la transition
             setTimeout(() => {
-                el.removeAttribute('id')
+                selectedCase.removeAttribute('id')
                 done()
-            }, translationDuration)
-            // done()
+            }, transitionDuration)
         }
     },
     methods: {

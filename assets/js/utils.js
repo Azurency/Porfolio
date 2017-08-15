@@ -11,3 +11,18 @@ export function addDynamicCssRule (rule) {
     }
     document.getElementsByTagName('head')[0].appendChild(style)
 }
+
+export function cumulativeOffset (element) {
+    var top = 0
+    var left = 0
+    do {
+        top += element.offsetTop || 0
+        left += element.offsetLeft || 0
+        element = element.offsetParent
+    } while (element)
+
+    return {
+        top: top,
+        left: left
+    }
+}
