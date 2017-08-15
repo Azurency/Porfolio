@@ -1,5 +1,17 @@
 <template>
-    <a :href="this.link" 
+    <nuxt-link 
+        v-if="internalLink"
+        :to="this.link" 
+        class="rounded-button" 
+        @click="emitClick" 
+        v-text="this.text"
+        :style="{ backgroundColor: fadedColor, color: textColor }"
+        @mouseover="isHover=true"
+        @mouseout="isHover=false">
+    </nuxt-link>
+    <a 
+        v-else
+        :href="this.link" 
         class="rounded-button" 
         @click="emitClick" 
         v-text="this.text"
@@ -42,6 +54,9 @@ export default {
         },
         textColor () {
             return this.isHover ? this.computedHoverColor : this.color
+        },
+        internalLink () {
+            return !this.link.includes('http://') && !this.link.includes('https://')
         }
     },
     methods: {

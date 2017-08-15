@@ -1,9 +1,9 @@
 <template>
     <nav>
         <ul class="nav">
-            <li class="nav__item" style="visibility: hidden;" v-scroll-reveal="{ delay: 150 }"><a href="" class="nav__link underline-hover">Accueil</a></li>
-            <li class="nav__item" style="visibility: hidden;" v-scroll-reveal="{ delay: 300 }"><a href="" class="nav__link underline-hover">Travail</a></li>
-            <li class="nav__item" style="visibility: hidden;" v-scroll-reveal="{ delay: 450 }"><a href="" class="nav__link underline-hover">Contact</a></li>
+            <li class="nav__item" style="visibility: hidden;" v-scroll-reveal="{ delay: 150 }"><a href="/" class="nav__link underline-hover">Accueil</a></li>
+            <li class="nav__item" style="visibility: hidden;" v-scroll-reveal="{ delay: 300 }"><a href="/#travail" class="nav__link underline-hover">Travail</a></li>
+            <li class="nav__item" style="visibility: hidden;" v-scroll-reveal="{ delay: 450 }"><a href="/#contact" class="nav__link underline-hover">Contact</a></li>
         </ul>
     </nav>
 </template>

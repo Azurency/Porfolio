@@ -23,7 +23,7 @@ module.exports = {
     /*
     ** Customize the progress-bar color
     */
-    loading: { color: '#3B8070' },
+    loading: { color: '#5D87C9' },
     /*
     ** Build configuration
     */
@@ -49,6 +49,9 @@ module.exports = {
     },
     router: {
         scrollBehavior: function (to, from, savedPosition) {
+            if (to.hash) {
+                return { selector: to.hash }
+            }
             return { x: 0, y: window.pageYOffset }
         }
     },

@@ -3,7 +3,7 @@
         <index-header/>
         <section class="index-section">
             <h3 class="index-section__title" style="visibility: hidden;" v-scroll-reveal="{ delay: 600 }" >Actuellement</h3>
-            <icon-link color="#F68E69" buttonText="G.A.R.I." style="visibility: hidden;" v-scroll-reveal="{ delay: 750 }">
+            <icon-link color="#F68E69" buttonText="G.A.R.I." style="visibility: hidden;" v-scroll-reveal="{ delay: 750 }" buttonLink="/cases/gari">
                 <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
                     <g fill="none" fill-rule="evenodd" stroke="currentColor" transform="translate(1)">
                         <rect width="14.144" height="15.06" x="2.928" y=".75" stroke-width="1.5" rx="3.6" />
@@ -18,7 +18,7 @@
                 </svg>
                 Un logiciel de d'affectation de services à des véhicules en respectant des contraintes.
             </icon-link>
-            <icon-link color="rgba(116, 155, 209, 1.00)" buttonText="Freelance" style="visibility: hidden;" v-scroll-reveal="{ delay: 900 }">
+            <icon-link color="rgba(116, 155, 209, 1.00)" buttonText="Freelance" style="visibility: hidden;" v-scroll-reveal="{ delay: 900 }" buttonLink="/#contact">
                 <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
                     <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round">
                         <rect width="18" height="12.444" y="3.556" rx="1.778" />
@@ -29,7 +29,7 @@
             </icon-link>
         </section>
         <section class="index-section">
-            <h3 class="index-section__title" style="visibility: hidden;" v-scroll-reveal="{ delay: 700 }">Mon travail</h3>
+            <h3 class="index-section__title" id="travail" style="visibility: hidden;" v-scroll-reveal="{ delay: 700 }">Mon travail</h3>
             <block-projet ref="test" title="G.A.R.I." color="rgba(165, 230, 237, 1.00)" @navigate="gotoLink" link="/cases/gari" style="visibility: hidden;" v-scroll-reveal="{ delay: 1050 }">
                 Création d'un logiciel de gestion de l'affectation de services à des véhicules pour les réseaux de transport.
                 <img src="~assets/projet_gari.png" alt="Capture G.A.R.I. v1.5" slot="image" height="100%">
@@ -54,19 +54,19 @@
         <section class="index-section index-section--two-columns">
             <div class="index-section__column">
                 <h3 class="index-section__title" v-scroll-reveal>Suivez moi</h3>
-                <icon-link color="rgba(116, 155, 209, 1.00)" buttonText="@azurency" v-scroll-reveal>
+                <icon-link color="rgba(116, 155, 209, 1.00)" buttonText="@azurency" v-scroll-reveal buttonLink="http://twitter.com/azurency">
                     <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
                         <path fill="none" stroke="currentColor" stroke-width="1.5" d="M19,0.00864214135 C18.1729688,0.577465221 17.257275,1.01252361 16.2881818,1.29706319 C15.222765,0.102568705 13.505865,-0.316314228 11.9890704,0.248181875 C10.4722757,0.812677978 9.47823659,2.24047445 9.5,3.82337898 L9.5,4.66548425 C6.41739235,4.74342311 3.49947641,3.31135415 1.72727273,0.850747405 C1.72727273,0.850747405 -1.72727273,8.42969477 6.04545455,11.7981158 C4.26681926,12.9753506 2.14799915,13.5656353 0,13.4823264 C7.77272727,17.6928527 17.2727273,13.4823264 17.2727273,3.79811583 C17.271932,3.56355047 17.2488024,3.32956374 17.2036364,3.09916846 C18.0850664,2.25158368 18.7070782,1.18145291 19,0.00864214135 Z" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                     <template slot="pre">Sur twitter à</template>
                 </icon-link>
-                <icon-link color="#E0779F" buttonText="mon github" v-scroll-reveal>
+                <icon-link color="#E0779F" buttonText="mon github" v-scroll-reveal buttonLink="https://github.com/Azurency">
                     <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20">
                         <path fill="none" stroke="currentColor" stroke-width="1.5" d="M5.85919129,15.431848 C1.67405465,16.715924 1.67405465,13.2917214 0,12.8636961 M11.7183826,18 L11.7183826,14.687084 C11.7818988,13.8613352 11.4953074,13.0475014 10.9315769,12.4527918 C13.5598427,12.153174 16.3220329,11.1344738 16.3220329,6.46043718 C16.3218181,5.26524238 15.8722915,4.11588463 15.0664919,3.25024722 C15.4480557,2.20458695 15.4210768,1.04878402 14.9911594,0.022936257 C14.9911594,0.022936257 14.0034672,-0.276681472 11.7183826,1.28989123 C9.79992354,0.758131172 7.77765033,0.758131172 5.85919129,1.28989123 C3.57410669,-0.276681472 2.58641444,0.022936257 2.58641444,0.022936257 C2.15649712,1.04878402 2.12951816,2.20458695 2.51108198,3.25024722 C1.69927187,4.12230575 1.24928225,5.28205171 1.25554099,6.4861187 C1.25554099,11.1259132 4.01773117,12.1446135 6.64599698,12.4784733 C6.08905538,13.0670625 5.8030028,13.8700293 5.85919129,14.687084 L5.85919129,18" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                     <template slot="pre">Faites un tour sur</template>
                 </icon-link>
-                <icon-link color="#74C4CC" buttonText="mon linkedin" v-scroll-reveal>
+                <icon-link color="#74C4CC" buttonText="mon linkedin" v-scroll-reveal buttonLink="https://www.linkedin.com/in/antoine-lassier-b69846a6/">
                     <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                         <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
                             <path stroke="currentColor" stroke-width="1.5" d="M2.04545455,0 C0.925312255,0 0,0.925312255 0,2.04545455 L0,15.9545455 C0,17.0746879 0.925312255,18 2.04545455,18 L15.9545455,18 C17.0746879,18 18,17.0746879 18,15.9545455 L18,2.04545455 C18,0.925312255 17.0746879,0 15.9545455,0 L2.04545455,0 Z" />
@@ -89,7 +89,7 @@
                     <b>les mieux adaptés</b> à tous les besoins.
                 </p>
                 <br>
-                <icon-link color="#96D557" buttonText="mon CV" v-scroll-reveal>
+                <icon-link color="#96D557" buttonText="mon CV" v-scroll-reveal buttonLink="https://drive.google.com/open?id=0B6FkUBxCL2UdcThiVnNjeE9sZ2s">
                     <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20">
                         <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1.5" transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M8.75,0 L1.75,0 C0.783501688,0 0,0.80588745 0,1.8 L0,16.2 C0,17.1941125 0.783501688,18 1.75,18 L12.25,18 C13.2164983,18 14,17.1941125 14,16.2 L14,5.4 L8.75,0 Z" />
@@ -103,7 +103,7 @@
             </div>
         </section>
         <section class="contact-section">
-            <div class="index-section index-section--center">
+            <div class="index-section index-section--center" id="contact">
                 <h5 class="index-section__leadtitle" v-scroll-reveal>Disponible en freelance</h5>
                 <h3 class="index-section__title index-section__title--borderless" v-scroll-reveal>Envie de travailler avec moi ?<br>Je suis toujours intéréssé par de nouveaux projets.</h3>
                 <call-button text="Conctactez moi" link="#" color="#2588C4" v-scroll-reveal>
@@ -249,48 +249,53 @@ export default {
             document.querySelector('.js-body').style.opacity = 0
 
             const selectedCase = document.querySelector('#navanim')
+            console.log(selectedCase)
             const transitionDuration = 500
 
-            // Calcul de la position actuelle du top
-            const doc = document.documentElement
-            const top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0)
+            if (selectedCase) {
+                // Calcul de la position actuelle du top
+                const doc = document.documentElement
+                const top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0)
 
-            // Calcul des offsets top et left de la case qui a été cliquée
-            const offset = cumulativeOffset(selectedCase)
+                // Calcul des offsets top et left de la case qui a été cliquée
+                const offset = cumulativeOffset(selectedCase)
 
-            // Création d'un nouvel élément pour la transition
-            const animatedEl = document.createElement('div')
+                // Création d'un nouvel élément pour la transition
+                const animatedEl = document.createElement('div')
 
-            animatedEl.style.position = 'absolute'
-            animatedEl.style.zIndex = '999'
-            animatedEl.style.backgroundColor = selectedCase.firstChild.style.backgroundColor
-            animatedEl.style.transition = 'all ' + transitionDuration + 'ms cubic-bezier(.19,.91,.66,.99)'
-            animatedEl.style.width = selectedCase.clientWidth + 'px'
-            animatedEl.style.height = selectedCase.clientHeight + 'px'
-            animatedEl.style.top = offset.top + 'px'
-            animatedEl.style.left = offset.left + 'px'
-            animatedEl.style.transformOrigin = '50% top 0'
-            animatedEl.setAttribute('id', 'js-caseHeader')
+                animatedEl.style.position = 'absolute'
+                animatedEl.style.zIndex = '999'
+                animatedEl.style.backgroundColor = selectedCase.firstChild.style.backgroundColor
+                animatedEl.style.transition = 'all ' + transitionDuration + 'ms cubic-bezier(.19,.91,.66,.99)'
+                animatedEl.style.width = selectedCase.clientWidth + 'px'
+                animatedEl.style.height = selectedCase.clientHeight + 'px'
+                animatedEl.style.top = offset.top + 'px'
+                animatedEl.style.left = offset.left + 'px'
+                animatedEl.style.transformOrigin = '50% top 0'
+                animatedEl.setAttribute('id', 'js-caseHeader')
 
-            document.body.appendChild(animatedEl)
+                document.body.appendChild(animatedEl)
 
-            // Cacher la case qui a été cliqué (elle est remplacée par le nouvel élément)
-            selectedCase.firstChild.style.transition = 'none'
-            selectedCase.firstChild.style.opacity = 0
+                // Cacher la case qui a été cliqué (elle est remplacée par le nouvel élément)
+                selectedCase.firstChild.style.transition = 'none'
+                selectedCase.firstChild.style.opacity = 0
 
-            // Flush du style et mise en forme de l'animatedEl
-            window.getComputedStyle(animatedEl).opacity
+                // Flush du style et mise en forme de l'animatedEl
+                window.getComputedStyle(animatedEl).opacity
 
-            // Transition vers la case study
-            const translateY = 'translateY(' + (top - offset.top) + 'px)'
-            const scaleX = 'scaleX(' + window.innerWidth / selectedCase.clientWidth + ')'
-            const scaleY = 'scaleY(' + 350 / selectedCase.clientHeight + ')'
+                // Transition vers la case study
+                const translateY = 'translateY(' + (top - offset.top) + 'px)'
+                const scaleX = 'scaleX(' + window.innerWidth / selectedCase.clientWidth + ')'
+                const scaleY = 'scaleY(' + 350 / selectedCase.clientHeight + ')'
 
-            animatedEl.style.transform = translateY + ' ' + scaleX + ' ' + scaleY
+                animatedEl.style.transform = translateY + ' ' + scaleX + ' ' + scaleY
+            }
 
             // Changement de page après la transition
             setTimeout(() => {
-                selectedCase.removeAttribute('id')
+                if (selectedCase) {
+                    selectedCase.removeAttribute('id')
+                }
                 done()
             }, transitionDuration)
         }

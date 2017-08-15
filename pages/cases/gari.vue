@@ -194,7 +194,9 @@ export default {
                     console.log('enter case')
                     window.scrollTo(0, 0)
                     const elt = document.querySelector('#js-caseHeader')
-                    document.body.removeChild(elt)
+                    if (elt) {
+                        document.body.removeChild(elt)
+                    }
                     done()
                 },
                 leave (el, done) {
