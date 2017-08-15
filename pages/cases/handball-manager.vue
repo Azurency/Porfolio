@@ -13,7 +13,7 @@
                     <rounded-button 
                         text="regarder le sujet" 
                         :color="darkenColor" 
-                        link="http://roadtrip.azurency.fr"
+                        link="https://drive.google.com/open?id=0B6FkUBxCL2UdOUdDeW02bjczQUU"
                     />.
                 </p>
                 <p class="case__paragraph">En résume l'application devait offrir à l'utilisateur de la possibilitée de :</p>
@@ -48,7 +48,7 @@
                     <rounded-button 
                         text="consulter toute l'analyse" 
                         :color="darkenColor" 
-                        link="http://roadtrip.azurency.fr"
+                        link="https://drive.google.com/open?id=0B6FkUBxCL2UdZE1JS2lSNEdGLXc"
                     />.
                 </p>
                 <h2 class="case__title">L'interface</h2>
@@ -101,7 +101,7 @@
                     <rounded-button 
                         text="un guide d'utilisation" 
                         :color="darkenColor" 
-                        link="https://gitlab.com/Azurency/groupe22a"
+                        link="https://drive.google.com/open?id=0B6FkUBxCL2UdbU1iaUdTMjUtaGM"
                     /> que vous pouvre consulter au format pdf.
                 </p>
                 <p class="case__paragraph">Vous pouvez aussi aller voir le code directemement depuis 
