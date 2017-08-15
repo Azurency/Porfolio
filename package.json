@@ -5,6 +5,7 @@
   "author": "Lassier Antoine <toinousp@gmail.com>",
   "private": true,
   "dependencies": {
+    "@nuxtjs/google-analytics": "^1.0.0",
     "animejs": "^2.0.2",
     "nuxt": "latest",
     "sass-loader": "^6.0.6",

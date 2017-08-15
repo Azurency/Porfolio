@@ -59,7 +59,9 @@ module.exports = {
     },
     plugins : [
         { src: '~plugins/vue-scroll-reveal', ssr: false }, 
-        { src: '~plugins/vue-tippy', ssr: false },
-        { src: '~plugins/ga.js', ssr: false }
+        { src: '~plugins/vue-tippy', ssr: false }
+    ],
+    modules: [
+        ['@nuxtjs/google-analytics', { ua: 'UA-104678592-1' }],
     ]
 }
