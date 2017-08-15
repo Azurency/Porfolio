@@ -31,7 +31,7 @@
                 <p class="case__paragraph">Il est décliné en multiples couleurs pour pouvoir par exemple réaliser une animation au survol.</p>
             </section>
             <div class="case__img-container">
-                <img src="~assets/case-macollec-2.jpg" alt="Le logo final en différentes couleurs" class="case__img">
+                <img src="~assets/case-macollec-2.jpg" alt="Le logo final en différentes couleurs" class="case__img" width="1000px">
                 <p class="case__legend">Le logo final de macollec capsule en 10 teintes.</p>
             </div>
             <div class="case__colored-block" :style="{ background: block1BackgroundColor, color: block1Color }">
@@ -40,7 +40,7 @@
                     <p class="case__paragraph">Le choix de la police s'est porté sur <b>Aperçu</b> pour le logo et les éléments de UI comme les boutons et les menus, car c'est une police pleine de caractère tout en restant parfaitement lisible sur une interface.</p>
                     <p class="case__paragraph">Le contenu du site lui utilise la police <b>Source Sans Pro</b>, célèbre pour sa clarté et sa bonne lisibilité dans les interfaces, elle est présente dans le texte des cartes de l'ensemble du site.</p>
                     <div class="case__img-container">
-                        <img src="~assets/case-macollec-3.jpg" alt="Les polices utilisées" class="case__img case__img--shadow">
+                        <img src="~assets/case-macollec-3.jpg" alt="Les polices utilisées" class="case__img case__img--shadow" width="400px">
                         <p class="case__legend">Exemples d'utilisation d'Apercu et de Source Sans Pro.</p>
                     </div>
                 </section>

@@ -5,7 +5,7 @@
             <b>une solution conviviale, performante et moderne</b> pour affecter leurs véhicules aux services.
         </case-header>
         <case-intro :roles="roles" :technologies="technologies" :annee="annee">
-            Pour remplacer leurs outil Excel existant, Keolis Orléans m'a demandé de développer de A à Z un logiciel d'affectation de véhicules à des services. J'ai eu carte blanche pour le choix du design et des technologies.
+            Pour remplacer leur outil Excel existant, Keolis Orléans m'a demandé de développer de A à Z un logiciel d'affectation de véhicules à des services. J'ai eu carte blanche pour le choix du design et des technologies.
         </case-intro>
         <article class="case" style="visibility: hidden;" v-scroll-reveal="{ viewFactor: 0, useDelay: 'once', delay: 300 }">
             <section class="case__container">
@@ -15,7 +15,7 @@
                 <ul class="case__list">
                     <li class="case__list-item">Faire rouler ou interdire certains véhicules sur certains parcours</li>
                     <li class="case__list-item">Affecter les véhicules avec flocages marketing en priorité</li>
-                    <li class="case__list-item">Positioner les véhicules qui rentrent à une heure précise pour le nettoyage</li>
+                    <li class="case__list-item">Positionner les véhicules qui rentrent à une heure précise pour le nettoyage</li>
                     <li class="case__list-item">Prendre en compte les véhicules en maintenance</li>
                     <li class="case__list-item">...</li>
                 </ul>
@@ -32,7 +32,7 @@
                     <li class="case__list-item">Gérer les indisponibilités et le nettoyage</li>
                 </ul>
                 <h2 class="case__title">La conception</h2>
-                <p class="case__paragraph">J’ai commencé la conception par interroger les différents acteurs qui allait interagir avec G.A.R.I. pour identifier les besoins et les problèmes qu’il rencontraient et comment trouver la bonne solution.</p>
+                <p class="case__paragraph">J’ai commencé ma phase de conception par interroger les différents acteurs qui allait interagir avec G.A.R.I. pour identifier les besoins et les problèmes qu’ils rencontraient et comment trouver la bonne solution.</p>
                 <p class="case__paragraph">Par exemple :</p>
                 <blockquote>Quels sont les points d’entrées des données (services) ?</blockquote>
                 <blockquote>Quels sont les problèmes avec le système actuel ?</blockquote>
@@ -68,7 +68,7 @@
             </div>
             <div class="case__colored-block" :style="{ background: block2BackgroundColor, color: block2Color }">
                 <section class="case__container">
-                    <h2 class="case__title" :style="{ color: block2Color }">Les choix technique</h2>
+                    <h2 class="case__title" :style="{ color: block2Color }">Les choix techniques</h2>
                     <p class="case__paragraph">J’ai choisi de réaliser <b>une web-app</b>, accessible sur le réseau de l’entreprise. L’avantage par rapport à une application de bureau, en Java par exemple, est que le logiciel n’a pas besoin d’être installé poste par poste par le service informatique. Toute personne connectée au réseau interne peut accéder via une adresse à entrer dans le navigateur à l’application.</p>
                     <p class="case__paragraph"><b>Côté client</b>, on retrouve les technologies classiques du web HTML5, CSS3 et le framework réactif Vue.js que j’ai commencé à utiliser progressivement (sans tout réécrire) à partir de la v1.5.</p>
                     <p class="case__paragraph"><b>Côté serveur</b>, j’ai opté pour un développement en Python 3, que ce soit pour la logique serveur ou pour les algorithmes d’affectations.<br>Python est un langage que j’apprécie beaucoup et que je trouve élégant 😍. J’ai développé sous un environnement virtuel python sur lequel j’ai utilisé le framework Flask avec l’ORM SQLAlchemy et MySQL, le tout sur un serveur Linux, Ubuntu 16.06.</p>
@@ -121,7 +121,7 @@
             </div>
             <section class="case__container" style="margin-top: 3em">
                 <h2 class="case__title">Quelques détails</h2>
-                <p class="case__paragraph">Depuis la v1.5, les choix proposer dans les modals sont plus clair pour que l'utilisateur ait une idée précise de l'action qu'il va effectuer, plus de "Ok" et "annuler" sans contexte.</p>
+                <p class="case__paragraph">Depuis la v1.5, les choix proposés dans les modals sont plus clairs pour que l'utilisateur ait une idée précise de l'action qu'il va effectuer, plus de "Ok" et "annuler" sans contexte.</p>
             </section>
             <div class="case__img-container">
                 <img src="~assets/case-gari-9.jpg" alt="Fenetre modale de confirmation" class="case__img case__img--shadow" width="500px">
