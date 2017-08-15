@@ -12,7 +12,7 @@
                 <p class="case__paragraph">Quand nous nous sommes décidés avec mon ami Sébastien (👋 coucou si tu passes par là) à organiser un roadtrip, nous avons bien sûr commencé par tant bien que mal essayer de planifier un itinéraire et des "endroits clefs" à visiter.</p>
             </section>
             <div class="case__img-container">
-                <img src="~assets/case-roadtrip-1.png" alt="Parcours en angleterre" class="case__img case__img--small-shadow" width="1200px">
+                <img src="~assets/case-roadtrip-1.jpg" alt="Parcours en angleterre" class="case__img case__img--small-shadow" width="1200px">
                 <p class="case__legend">Notre itinéraire en Angleterre avec un passage au Pays de Galle.</p>
             </div>
             <section class="case__container">
