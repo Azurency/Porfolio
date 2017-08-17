@@ -9,7 +9,7 @@
         <article class="case" style="visibility: hidden;" v-scroll-reveal="{ viewFactor: 0, useDelay: 'once', delay: 300 }">
             <section class="case__container">
                 <h2 class="case__title">Un blog ?</h2>
-                <p class="case__paragraph">Quand nous nous sommes décidés avec mon ami Sébastien (👋 coucou si tu passes par là) à organiser un roadtrip, nous avons bien sûr commencé par tant bien que mal essayer de planifier un itinéraire et des "endroits clefs" à visiter.</p>
+                <p class="case__paragraph">Quand nous nous sommes décidés avec mon ami Sébastien (<img src="~assets/emoji/waving-hand.png" alt="👋" class="emoji"> coucou si tu passes par là) à organiser un roadtrip, nous avons bien sûr commencé par tant bien que mal essayer de planifier un itinéraire et des "endroits clefs" à visiter.</p>
             </section>
             <div class="case__img-container">
                 <img src="~assets/case-roadtrip-1.jpg" alt="Parcours en angleterre" class="case__img case__img--small-shadow" width="1200px">
@@ -127,14 +127,12 @@ export default {
                 mode: 'out-in',
                 css: false,
                 enter (el, done) {
-                    console.log('enter case')
                     window.scrollTo(0, 0)
                     const elt = document.querySelector('#js-caseHeader')
                     document.body.removeChild(elt)
                     done()
                 },
                 leave (el, done) {
-                    console.log('leave case')
                     done()
                 }
             }

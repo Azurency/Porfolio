@@ -4,7 +4,7 @@
         <p class="footer__item footer__item--grayed" v-scroll-reveal>
             <a href="mailto:antoine.lassier@gmail.com" class="footer_link underline-hover">antoine.lassier@gmail.com</a>
         </p>
-        <p class="footer__item footer__item--grayed" v-scroll-reveal>Merci d'être passé ❤️</p>
+        <p class="footer__item footer__item--grayed" v-scroll-reveal>Merci d'être passé <img src="~assets/emoji/heart.png" alt="❤️" class="emoji"></p>
     </footer>
 </template>
 

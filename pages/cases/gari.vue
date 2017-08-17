@@ -71,7 +71,7 @@
                     <h2 class="case__title" :style="{ color: block2Color }">Les choix techniques</h2>
                     <p class="case__paragraph">J’ai choisi de réaliser <b>une web-app</b>, accessible sur le réseau de l’entreprise. L’avantage par rapport à une application de bureau, en Java par exemple, est que le logiciel n’a pas besoin d’être installé poste par poste par le service informatique. Toute personne connectée au réseau interne peut accéder via une adresse à entrer dans le navigateur à l’application.</p>
                     <p class="case__paragraph"><b>Côté client</b>, on retrouve les technologies classiques du web HTML5, CSS3 et le framework réactif Vue.js que j’ai commencé à utiliser progressivement (sans tout réécrire) à partir de la v1.5.</p>
-                    <p class="case__paragraph"><b>Côté serveur</b>, j’ai opté pour un développement en Python 3, que ce soit pour la logique serveur ou pour les algorithmes d’affectations.<br>Python est un langage que j’apprécie beaucoup et que je trouve élégant 😍. J’ai développé sous un environnement virtuel python sur lequel j’ai utilisé le framework Flask avec l’ORM SQLAlchemy et MySQL, le tout sur un serveur Linux, Ubuntu 16.06.</p>
+                    <p class="case__paragraph"><b>Côté serveur</b>, j’ai opté pour un développement en Python 3, que ce soit pour la logique serveur ou pour les algorithmes d’affectations.<br>Python est un langage que j’apprécie beaucoup et que je trouve élégant <img src="~assets/emoji/heart-eyes.png" alt="😍" class="emoji">. J’ai développé sous un environnement virtuel python sur lequel j’ai utilisé le framework Flask avec l’ORM SQLAlchemy et MySQL, le tout sur un serveur Linux, Ubuntu 16.06.</p>
                 </section>
             </div>
             <section class="case__container">
@@ -117,7 +117,7 @@
             </div>
             <div class="case__img-container">
                 <img src="~assets/case-gari-8.jpg" alt="Écran affectation" class="case__img case__img--shadow" width="960px" style="margin-top: 1em;">
-                <p class="case__legend">Écran principal, l'affectation. Les dépots peuvent etre différencier avec les couleurs différentes des lignes, les types de véhicules ont tous un code couleur.</p>
+                <p class="case__legend">Écran principal, l'affectation. Les dépôts peuvent être différenciés avec les couleurs différentes des lignes, les types de véhicules ont tous un code couleur.</p>
             </div>
             <section class="case__container" style="margin-top: 3em">
                 <h2 class="case__title">Quelques détails</h2>
@@ -199,7 +199,6 @@ export default {
                 mode: 'out-in',
                 css: false,
                 enter (el, done) {
-                    console.log('enter case')
                     window.scrollTo(0, 0)
                     const elt = document.querySelector('#js-caseHeader')
                     if (elt) {
@@ -208,7 +207,6 @@ export default {
                     done()
                 },
                 leave (el, done) {
-                    console.log('leave case')
                     done()
                 }
             }

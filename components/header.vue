@@ -7,7 +7,7 @@
                 <h1 class="index-header__iam" style="visibility: hidden;" v-scroll-reveal="{ delay: 300 }">Antoine Lassier</h1>
                 <p class="index-header__text" style="visibility: hidden;" v-scroll-reveal="{ delay: 450 }">
                     Un <b>développeur</b> freelance et
-                    <b>designer</b> passioné habitant actuellement à Orléans en France. Je créer des applications web et mobiles sur mesure, intuitives, utiles et jolies.
+                    <b>designer</b> passioné habitant actuellement à Orléans en France. Je crée des applications web et mobiles sur mesure, intuitives, utiles et jolies.
                 </p>
             </div>
         </div>
@@ -39,13 +39,14 @@
                     <g class="svg-anim-container"><circle title="Si vous voulez savoir, j'ai 23 ans" @mouseover="hoverShape" @mouseleave="leaveShape" class="svg-anim js-floating-shape" data-duration="15s"  data-start="100px" data-delay="450" cx="425.5" cy="238.5" r="138.922" fill="#FFAC3F" /></g>
                     <g class="svg-anim-container"><circle title="Et oui, ça bouge ! C'est joli et il y a même du texte !" @mouseover="hoverShape" @mouseleave="leaveShape" class="svg-anim js-floating-shape"  data-reverse data-duration="9s" data-start="100px" data-delay="500" cx="283.5" cy="198.5" r="70.5" fill="url(#a)" data-opacity=".45" /></g>
                     <g class="svg-anim-container"><polygon title="J'ai voyagé en Irlande, Angleterre, Inde, ..." @mouseover="hoverShape" @mouseleave="leaveShape" class="svg-anim js-floating-shape" data-reverse data-duration="15s" data-delay="500" stroke="url(#b)" stroke-width="10" points="362 393.538 423.946 368 405.55 431.396" stroke-linecap="round" data-opacity=".6"  /></g>
-                    <g class="svg-anim-container"><path title="Soit ma 🏊, il pleut des 🐘, bipush, yupiter" @mouseover="hoverShape" @mouseleave="leaveShape" class="svg-anim js-floating-shape" data-reverse data-delay="700" stroke="url(#c)" stroke-width="10" d="M344.152181,43 C326.864297,59.8272991 331.655728,68.7902154 358.526472,69.8887489 C398.83259,71.536549 348.388112,106.549381 383.887096,110.065078 C419.386079,113.580775 419.547037,132.641499 412.080178,145" stroke-linecap="round" /></g>
+                    <g class="svg-anim-container"><path id="emoji-tippy" title="Soit ma 🏊, il pleut des 🐘, bipush, yupiter" @mouseover="hoverShape" @mouseleave="leaveShape" class="svg-anim js-floating-shape" data-reverse data-delay="700" stroke="url(#c)" stroke-width="10" d="M344.152181,43 C326.864297,59.8272991 331.655728,68.7902154 358.526472,69.8887489 C398.83259,71.536549 348.388112,106.549381 383.887096,110.065078 C419.386079,113.580775 419.547037,132.641499 412.080178,145" stroke-linecap="round" /></g>
                     <g class="svg-anim-container"><polygon title="Le site est fait grâce à nuxt.js qui utilise vue.js" @mouseover="hoverShape" @mouseleave="leaveShape" class="svg-anim js-floating-shape" data-delay="700" data-min-offset="-25" data-max-offset="25" fill="url(#d)" points="430 472.078 494.092 438 528.17 502.092 464.078 536.17" data-opacity=".8" /></g>
-                    <g class="svg-anim-container"><circle title="Python forever 🔥" @mouseover="hoverShape" @mouseleave="leaveShape" class="svg-anim js-floating-shape" data-duration="9s" data-delay="400" data-min-offset="-25" data-max-offset="25" cx="237.5" cy="442.5" r="49.5" fill="#82A6C2" data-opacity=".5"  /></g>
+                    <g class="svg-anim-container"><circle id="emoji-tippy-2" title="Python forever 🔥" @mouseover="hoverShape" @mouseleave="leaveShape" class="svg-anim js-floating-shape" data-duration="9s" data-delay="400" data-min-offset="-25" data-max-offset="25" cx="237.5" cy="442.5" r="49.5" fill="#82A6C2" data-opacity=".5"  /></g>
                     <g class="svg-anim-container"><circle title="J'entame ma 5e année d'étude informatique" @mouseover="hoverShape" @mouseleave="leaveShape" class="svg-anim js-floating-shape" data-duration="15s" data-delay="500"  cx="243.5" cy="436.5" r="49.5" fill="#50CDF7" data-opacity=".3"  /></g>
                 </g>
             </svg>
-    
+            <div id="tippy-template-1" style="display:none;">Soit ma <img src="~assets/emoji/swimmer.png" alt="🏊" class="emoji">, il pleut des <img src="~assets/emoji/elephant.png" alt="🐘" class="emoji">, bipush, yupiter</div>
+            <div id="tippy-template-2" style="display:none;">Python forever <img src="~assets/emoji/fire.png" alt="🔥" class="emoji"></div>
         </div>
     </header>
 </template>
@@ -103,7 +104,17 @@ export default {
             if (tippyInstance) {
                 currentTippy = tippyInstance.tippy
             } else {
-                currentTippy = window.tippy(shape)
+                if (shape.getAttribute('id') === 'emoji-tippy') {
+                    currentTippy = window.tippy(shape, {
+                        html: '#tippy-template-1'
+                    })
+                } else if (shape.getAttribute('id') === 'emoji-tippy-2') {
+                    currentTippy = window.tippy(shape, {
+                        html: '#tippy-template-2'
+                    })
+                } else {
+                    currentTippy = window.tippy(shape)
+                }
                 this.tippyInstances.push({
                     el: shape,
                     tippy: currentTippy

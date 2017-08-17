@@ -9,7 +9,7 @@
         <article class="case" style="visibility: hidden;" v-scroll-reveal="{ viewFactor: 0, useDelay: 'once', delay: 300 }">
             <section class="case__container">
                 <h2 class="case__title">La méthode</h2>
-                <p class="case__paragraph">Don't break the chain ⛓ est <a href="http://lifehacker.com/281626/jerry-seinfelds-productivity-secret" class="underline-hover">une méthode</a> très simple pour se motiver à mener à bien des projets, elle est utilisée et expliquée par Jerry Seinfeld.</p>
+                <p class="case__paragraph">Don't break the chain <img src="~assets/emoji/chains.png" alt="⛓" class="emoji"> est <a href="http://lifehacker.com/281626/jerry-seinfelds-productivity-secret" class="underline-hover">une méthode</a> très simple pour se motiver à mener à bien des projets, elle est utilisée et expliquée par Jerry Seinfeld.</p>
                 <p class="case__paragraph">Très simplement :</p>
                 <ul class="case__list">
                     <li class="case__list-item">Choisissez un but</li>
@@ -61,7 +61,7 @@
                         :color="darkenColor" 
                         link="https://github.com/Azurency/dont-break-the-chain-android"
                     />.</p>
-                <p class="case__paragraph">Une version iOS est en cours de réflexion 🤔, j'espère avoir le temps de la faire un jour.</p>
+                <p class="case__paragraph">Une version iOS est en cours de réflexion <img src="~assets/emoji/thinking-face.png" alt="🤔" class="emoji">, j'espère avoir le temps de la faire un jour.</p>
             </section>
         </article>
     </div>
@@ -115,14 +115,12 @@ export default {
                 mode: 'out-in',
                 css: false,
                 enter (el, done) {
-                    console.log('enter case')
                     window.scrollTo(0, 0)
                     const elt = document.querySelector('#js-caseHeader')
                     document.body.removeChild(elt)
                     done()
                 },
                 leave (el, done) {
-                    console.log('leave case')
                     done()
                 }
             }

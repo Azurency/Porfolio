@@ -108,7 +108,7 @@
                 <p class="case__paragraph">La partie échange du site permet aux collectionneurs de s'échanger des capsules en faisant des demandes à d'autres utilisateurs. Ils sélectionnent l'utilisateur et les capsules qui l'intéressent, et un échange commence entre les deux parties pour trouver le bon compromis de l'échange.</p>
                 <p class="case__paragraph">J'ai décidé de reprendre les mêmes codes pour la sélection des capsules que pour naviguer dans le catalogue, l'utilisateur n'est donc pas perdu dans une nouvelle interface pour l'échange.<br>Le récapitulatif des demandes et échanges en cours permet d'avoir un oeil sur tout ce qui se passe facilement.</p>
                 <h2 class="case__title">Le développement</h2>
-                <p class="case__paragraph">Le développement est toujours en cours, je ne peux donc pas vous fournir de liens 👀. Mais dès que tout sera en place, je n'hésiterai pas à le rajouter ici !</p>
+                <p class="case__paragraph">Le développement est toujours en cours, je ne peux donc pas vous fournir de liens <img src="~assets/emoji/eyes.png" alt="👀" class="emoji">. Mais dès que tout sera en place, je n'hésiterai pas à le rajouter ici !</p>
             </section>
         </article>
     </div>
@@ -160,14 +160,12 @@ export default {
                 mode: 'out-in',
                 css: false,
                 enter (el, done) {
-                    console.log('enter case')
                     window.scrollTo(0, 0)
                     const elt = document.querySelector('#js-caseHeader')
                     document.body.removeChild(elt)
                     done()
                 },
                 leave (el, done) {
-                    console.log('leave case')
                     done()
                 }
             }

@@ -81,7 +81,7 @@
             <div class="index-section__column">
                 <h3 class="index-section__title" v-scroll-reveal>À propos de moi</h3>
                 <p class="index-section__paragraph" v-scroll-reveal>
-                    Je suis Antoine, né à Orléans en France. J'ai 22 ans et suis en dernière année de
+                    Je suis Antoine, né à Orléans en France. J'ai 23 ans et suis en dernière année de
                     <b>Master MIAGE</b> à l'Université d'Orléans.
                     <br><br>Je suis un
                     <b>developpeur full-stack</b> et un
@@ -199,8 +199,8 @@
                             <rect width="40" height="28" rx="4"/>
                             <path d="M12 36L28 36M20 28L20 36"/>
                         </g>
-                    </svg>
-                    Fringe (the observers 🕵️)
+                    </svg>            
+                    Fringe (the observers <img src="~assets/emoji/detective.png" alt="🕵️" class="emoji">)
                     <br>Sherlock
                     <br>Halt & Catch Fire
                     <br>...
@@ -217,7 +217,7 @@
                 </stat-block>
             </div>
         </section>
-    </div>
+    </div> 
 </template>
 
 <script>
@@ -244,7 +244,6 @@ export default {
         mode: 'out-in',
         css: false,
         enter (el, done) {
-            console.log('enter')
             done()
         },
         leave (elt, done) {
@@ -252,7 +251,6 @@ export default {
             document.querySelector('.js-body').style.opacity = 0
 
             const selectedCase = document.querySelector('#navanim')
-            console.log(selectedCase)
             const transitionDuration = 500
 
             if (selectedCase) {

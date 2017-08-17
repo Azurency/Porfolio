@@ -9,7 +9,7 @@
         <article class="case" style="visibility: hidden;" v-scroll-reveal="{ viewFactor: 0, useDelay: 'once', delay: 300 }">
             <section class="case__container">
                 <h2 class="case__title">Un projet scolaire</h2>
-                <p class="case__paragraph">Plûtot que de partir dans une description beaucoup trop longue du projet et des différentes demandes, je vous laisse, si vous avez le courage 🤓, 
+                <p class="case__paragraph">Plûtot que de partir dans une description beaucoup trop longue du projet et des différentes demandes, je vous laisse, si vous avez le courage <img src="~assets/emoji/nerd-face.png" alt="🤓" class="emoji">, 
                     <rounded-button 
                         text="regarder le sujet" 
                         :color="darkenColor" 
@@ -164,14 +164,12 @@ export default {
                 mode: 'out-in',
                 css: false,
                 enter (el, done) {
-                    console.log('enter case')
                     window.scrollTo(0, 0)
                     const elt = document.querySelector('#js-caseHeader')
                     document.body.removeChild(elt)
                     done()
                 },
                 leave (el, done) {
-                    console.log('leave case')
                     done()
                 }
             }
