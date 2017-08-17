@@ -47,7 +47,7 @@ module.exports = {
                 })
             }
         },
-        vendor: ['animejs', 'scrollreveal']
+        vendor: ['babel-polyfill', 'scrollreveal']
     },
     router: {
         scrollBehavior: function (to, from, savedPosition) {

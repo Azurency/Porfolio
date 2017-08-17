@@ -151,7 +151,8 @@ export default {
     },
     mounted () {
         const shapes = document.querySelectorAll('.svg-anim')
-        shapes.forEach((shape) => {
+        for (var i = 0; i < shapes.length; i++) {
+            const shape = shapes[i]
             // Position initiale
             shape.style.transform = 'translateY(' + (shape.hasAttribute('data-start') ? shape.getAttribute('data-start') : '25px') + ')'
 
@@ -165,7 +166,7 @@ export default {
                     this.runShapeAnimation(shape)
                 }, delay)
             }, delay)
-        }, this)
+        }
     }
 }
 </script>
