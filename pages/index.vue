@@ -16,7 +16,7 @@
                         <path stroke-width="1.5" d="M6.45555517,12.6 L6.45555517,16.7662576 C6.45555517,17.9167379 5.65961695,18.8493865 4.6777774,18.8493865 C3.69593784,18.8493865 2.89999962,17.9167379 2.89999962,16.7662576 L2.89999962,15.7397756" transform="matrix(-1 0 0 1 9.356 0)" />
                     </g>
                 </svg>
-                Un logiciel de d'affectation de services à des véhicules en respectant des contraintes.
+                Un logiciel d'affectation de services à des véhicules en respectant des contraintes.
             </icon-link>
             <icon-link color="rgba(116, 155, 209, 1.00)" buttonText="Freelance" style="visibility: hidden;" v-scroll-reveal="{ delay: 900 }" buttonLink="/#contact">
                 <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
@@ -25,7 +25,7 @@
                         <path d="M12.6,16 L12.6,1.77777778 C12.6,0.795938223 11.7941125,0 10.8,0 L7.2,0 C6.20588745,0 5.4,0.795938223 5.4,1.77777778 L5.4,16" />
                     </g>
                 </svg>
-                Je suis disponible pour travailler avec vous, n'hésitez pas a me contacter.
+                Je suis disponible pour travailler avec vous, n'hésitez pas à me contacter.
             </icon-link>
         </section>
         <section class="index-section">
@@ -43,7 +43,7 @@
                 <img src="~assets/projet_roadtrip.png" alt="Illustration self-portrait et capture article" slot="image" height="100%">
             </block-projet>
             <block-projet title="Handball team manager" color="rgba(186, 234, 138, 1.00)" @navigate="gotoLink" link="/cases/handball-manager" style="visibility: hidden;" v-scroll-reveal="{ delay: 1500 }">
-                Lors d'un projet d'étude, j'ai créer un logiciel de gestion d'un championat de handball.
+                Lors d'un projet d'étude, j'ai créé un logiciel de gestion d'un championnat de handball.
                 <img src="~assets/projet_handball.png" alt="Captures Handball Manager" slot="image" height="100%">
             </block-projet>
             <block-projet title="Don't break the chain" color="rgba(218, 212, 209, 1.00)" @navigate="gotoLink" link="/cases/dont-break-the-chain" style="visibility: hidden;" v-scroll-reveal="{ delay: 1650 }">
@@ -86,7 +86,7 @@
                     <br><br>Je suis un
                     <b>developpeur full-stack</b> et un
                     <b>designer</b>. Je maitrise un grand nombre de technologies et méthodologies pour construire des sites web et des applications
-                    <b>les mieux adaptés</b> à tous les besoins.
+                    <b>les mieux adaptées</b> à tous les besoins.
                 </p>
                 <br>
                 <icon-link color="#96D557" buttonText="mon CV" v-scroll-reveal buttonLink="https://drive.google.com/open?id=0B6FkUBxCL2UdcThiVnNjeE9sZ2s">
@@ -105,7 +105,7 @@
         <section class="contact-section">
             <div class="index-section index-section--center" id="contact">
                 <h5 class="index-section__leadtitle" v-scroll-reveal>Disponible en freelance</h5>
-                <h3 class="index-section__title index-section__title--borderless" v-scroll-reveal>Envie de travailler avec moi ?<br>Je suis toujours intéréssé par de nouveaux projets.</h3>
+                <h3 class="index-section__title index-section__title--borderless" v-scroll-reveal>Envie de travailler avec moi ?<br>Je suis toujours intéressé par de nouveaux projets.</h3>
                 <call-button text="Conctactez moi" link="mailto:antoine.lassier@gmail.com" color="#2588C4" v-scroll-reveal>
                     <template slot="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">

@@ -7,7 +7,7 @@
                 <h1 class="index-header__iam" style="visibility: hidden;" v-scroll-reveal="{ delay: 300 }">Antoine Lassier</h1>
                 <p class="index-header__text" style="visibility: hidden;" v-scroll-reveal="{ delay: 450 }">
                     Un <b>développeur</b> freelance et
-                    <b>designer</b> passioné habitant actuellement à Orléans en France. Je crée des applications web et mobiles sur mesure, intuitives, utiles et jolies.
+                    <b>designer</b> passionné habitant actuellement à Orléans en France. Je crée des applications web et mobiles sur mesure, intuitives, utiles et modernes.
                 </p>
             </div>
         </div>
