@@ -9,7 +9,7 @@ module.exports = {
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
             { name: 'author', content: 'Antoine Lassier' },
             { hid: 'keywords', name: 'keywords', content: 'développement,design,site web,mobile,responsive,réalisation,site,créer,orléans,paris,portfolio,antoine lassier,lassier,designer,graphiste,charte graphique,gari,gariapp,gari app,développeur,python' },
-            { hid: 'description', name: 'description', content: 'Porfolio d\'Antoine Lassier, développeur et designer web et mobile. Disponible en freelance pour votre création de site web ou applications mobiles à Orléans, Paris et partout en France.' }
+            { hid: 'description', name: 'description', content: 'Porfolio d\'Antoine Lassier, développeur et designer web et mobile. Disponible en freelance pour votre création de site web ou applications mobiles à Paris et partout en France.' }
         ],
         script: [
             { src: 'https://use.typekit.net/txv3mea.js' }
@@ -33,12 +33,12 @@ module.exports = {
         /*
         ** Run ESLINT on save
         */
-        extend(config, ctx) {
+        extend(config, { isDev }) {
             /* const cssLoader = config.module.rules.find((loader) => loader.test.toString() === '/\\.css$/')
             //cssLoader.use.push('postcss-loader')
             cssLoader.use.splice(2, 0, 'postcss-loader'); */
 
-            if (ctx.isClient) {
+            if (isDev && process.client) {
                 config.module.rules.push({
                     enforce: 'pre',
                     test: /\.(js|vue)$/,

@@ -30,9 +30,13 @@
         </section>
         <section class="index-section">
             <h3 class="index-section__title" id="travail" style="visibility: hidden;" v-scroll-reveal="{ delay: 700 }">Mon travail</h3>
-            <block-projet ref="test" title="G.A.R.I." color="rgba(165, 230, 237, 1.00)" @navigate="gotoLink" link="/cases/gari" style="visibility: hidden;" v-scroll-reveal="{ delay: 1050 }">
+            <block-projet title="G.A.R.I." color="rgba(165, 230, 237, 1.00)" @navigate="gotoLink" link="/cases/gari" style="visibility: hidden;" v-scroll-reveal="{ delay: 1050 }">
                 Création d'un logiciel de gestion de l'affectation de services à des véhicules pour les réseaux de transport.
                 <img src="~assets/projet_gari.png" alt="Capture G.A.R.I. v1.5" slot="image" height="100%">
+            </block-projet>
+            <block-projet title="RFP-Platform" color="rgba(127, 212, 204, 1.00)" @navigate="gotoLink" link="/cases/rfp-platform" style="visibility: hidden;" v-scroll-reveal="{ delay: 1125 }">
+                Développment d'un logiciel de gestion de gestion d'appels d'offres.
+                <img src="~assets/projet_rfpplatform.png" alt="Capture RFP-Platform" slot="image" height="100%">
             </block-projet>
             <block-projet title="Macollec-capsule" color="rgba(246, 142, 105, 1.00)" @navigate="gotoLink" link="/cases/ma-collec" style="visibility: hidden;" v-scroll-reveal="{ delay: 1200 }">
                 Réalisation du design d'un site de gestion d'une collection de capsules de champagne.
@@ -81,7 +85,7 @@
             <div class="index-section__column">
                 <h3 class="index-section__title" v-scroll-reveal>À propos de moi</h3>
                 <p class="index-section__paragraph" v-scroll-reveal>
-                    Je suis Antoine, né à Orléans en France. J'ai 23 ans et suis en dernière année de
+                    Je suis Antoine, né à Orléans en France. J'ai 24 ans et suis diplômé d'un
                     <b>Master MIAGE</b> à l'Université d'Orléans.
                     <br><br>Je suis un
                     <b>developpeur full-stack</b> et un

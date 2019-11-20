@@ -1,6 +1,6 @@
 <template>
     <div>
-        <case-header :color="color" next-case="/cases/ma-collec" prev-case="/cases/dont-break-the-chain">
+        <case-header :color="color" next-case="/cases/rfp-platform" prev-case="/cases/dont-break-the-chain">
             <b>G.A.R.I.</b> est un logiciel développé pour les réseaux de transport désirant avoir
             <b>une solution conviviale, performante et moderne</b> pour affecter leurs véhicules aux services.
         </case-header>
@@ -117,7 +117,7 @@
             </div>
             <div class="case__img-container">
                 <img src="~assets/case-gari-8.jpg" alt="Écran affectation" class="case__img case__img--shadow" width="960px" style="margin-top: 1em;">
-                <p class="case__legend">Écran principal, l'affectation. Les dépôts peuvent être différenciés avec les couleurs différentes des lignes, les types de véhicules ont tous un code couleur.</p>
+                <p class="case__legend">Écran principal, l'affectation. Les dépôts peuvent être différenciés avec les couleurs différentes des lignes, les types de véhicules ont tous un code couleur</p>
             </div>
             <section class="case__container" style="margin-top: 3em">
                 <h2 class="case__title">Quelques détails</h2>
@@ -125,11 +125,79 @@
             </section>
             <div class="case__img-container">
                 <img src="~assets/case-gari-9.jpg" alt="Fenetre modale de confirmation" class="case__img case__img--shadow" width="500px">
-                <p class="case__legend">Oui, supprimer ou Non, garder cette indisponibilité = un choix clair.</p>
+                <p class="case__legend">Oui, supprimer ou Non, garder cette indisponibilité = un choix clair</p>
+            </div>
+            <section class="case__container" style="margin-top: 3em">
+                <h2 class="case__title">Gestion des tramways, v2.0</h2>
+                <p class="case__paragraph">La mise à jour en version 2.0 a apporté son lot de nouveautés et surtout la gestion des tramways. Les trams ont de nombreuses spécificités qui rendent leur affectation très différente des autres véhicules :</p>
+                <ul class="case__list">
+                    <li class="case__list-item">Un remisage sur lequel ils sont placés les uns derrière les autres, on ne peut pas sortir n'importe quel véhicule pour l'affecter</li>
+                    <li class="case__list-item">Des maintenances kilométriques obligatoires qui ne doivent pas tomber en même temps</li>
+                    <li class="case__list-item">Des contraintes de nettoyages, équipements par périodes, voies spécifiques pour maintenance, etc.</li>
+                </ul>
+            </section>
+            <div class="case__flex">
+                <div class="case__flex-item">
+                    <img src="~assets/case-gari-11.jpg" alt="Visualisation des visites préventives" class="case__img case__img--shadow" width="450px">
+                    <p class="case__legend">Selection des dates de maintenance souhaitées</p>
+                </div>
+                <div class="case__flex-item" style="margin-left:-40px;">
+                    <img src="~assets/case-gari-10.jpg" alt="Visualisation du remisage" class="case__img case__img--shadow" width="550px">
+                <p class="case__legend">Les trams sur le remisage, avec des codes couleurs pour les réserves, indisponibles, etc</p>
+                </div>
+            </div>
+            <section class="case__container">
+                <p class="case__paragraph">
+                    La problématique des trams est donc d'optimiser les affectations (sur des services plus long ou plus court) pour que les maintenances tombent au moment souhaité, tout en remisant bien les véhicules quand ils rentrent sur le dépôt le soir.
+                </p>
+                <p class="case__paragraph">
+                    J'ai écrit les algorithmes d’affectation et de remisage des véhicules en me reposant sur des thèses mathématiques de chercheurs qui existaient pour les trains que j’ai transposés et appliqués au domaine des trams et des bus.
+                </p>
+                <h2 class="case__title">Des adaptations, v3.0</h2>
+                <p class="case__paragraph">
+                    J'ai réalisé fin 2019 une mise à jour v3.0. Elle avait pour but d'ajouter une affectation kilométrique aux véhicules, de continuer à améliorer l'expérience utilisateur et d'ajouter une interface avec d'autres logiciels faisant partie du SI typique d'un réseau de transport (le SAEIV).
+                </p>
+            </section>
+            <div class="case__flex">
+                <div class="case__flex-item case__flex-item--grid">
+                    <img src="~assets/case-gari-13.jpg" alt="Introduction de l'affectation" class="case__img case__img--shadow" width="450px">
+                    <p class="case__legend">Introduction avec les informations essentielles</p>
+                </div>
+                <div class="case__flex-item case__flex-item--grid">
+                    <img src="~assets/case-gari-14.jpg" alt="Detail des indisponibilités par type de véhicule" class="case__img case__img--shadow" width="430px">
+                    <p class="case__legend">Détail par type de véhicule</p>
+                </div>
+            </div>
+            <section class="case__container">
+                <p class="case__paragraph">
+                    Elle a aussi amélioré différents aspects :
+                </p>
+                <div class="case__flex case__flex--normal-align">
+                    <ul class="case__list">
+                        <li class="case__list-item">Gestion des véhicules de relèves et "autres véhicules"</li>
+                        <li class="case__list-item">Date commune à toute l'application</li>
+                        <li class="case__list-item">Nouveaux paramétrages administrateur : éditions des services, menus visibles, etc.</li>
+                    </ul>
+                    <ul class="case__list">
+                        <li class="case__list-item">Ajout et amélioration de différents exports Excel</li>
+                        <li class="case__list-item">Services obligatoires/facultatifs</li>
+                        <li class="case__list-item">Nombreuses petites améliorations (introduction à l'affectation, détail des indisponibilités, nombre total de véhicules, etc.)</li>
+                    </ul>
+                </div>
+            </section>
+            <div class="case__flex">
+                <div class="case__flex-item">
+                    <img src="~assets/case-gari-12.jpg" alt="Page de gestion des services" class="case__img case__img--shadow" width="650px">
+                    <p class="case__legend">Modification des services</p>
+                </div>
+                <div class="case__flex-item" style="margin-left:-100px;">
+                    <img src="~assets/case-gari-15.jpg" alt="Personalisation du menu" class="case__img case__img--shadow" width="330px">
+                <p class="case__legend">Menu personalisable</p>
+                </div>
             </div>
             <section class="case__container" style="margin-top: 3em">
                 <h2 class="case__title">Retours utilisateur</h2>
-                <p class="case__paragraph">Les retours utilisateurs ont jusque là été très positifs. L’outil est agréable à utiliser, pratique et leur permet de gagner du temps.<br>Les améliorations de la version 1.5 ont été aussi bien accueillies et d’autres modifications sont déjà en train d’être étudiées pour une prochaine version.</p>
+                <p class="case__paragraph">Les retours utilisateurs ont jusque là été très positifs. L’outil est agréable à utiliser, pratique et leur permet de gagner du temps.<br>Les améliorations sont bien accueillies au fil des ans et d’autres modifications sont déjà en train d’être étudiées pour une prochaine version.</p>
                 <p class="case__paragraph">N'hésitez pas à tester la démo sur 
                     <rounded-button 
                         text="le site de G.A.R.I." 
@@ -156,8 +224,8 @@ export default {
             color: 'rgba(165, 230, 237, 1.00)',
             darkenColor: Color('rgba(165, 230, 237, 1.00)').rotate(5).darken(0.45).rgb().string(),
             roles: ['Conception', 'Design', 'Développement', 'Tests'],
-            technologies: ['Python (Flask)', 'UML/Merise', 'Vue.js', 'MySQL', 'HTML/CSS'],
-            annee: '2016-2017'
+            technologies: ['Python (Flask)', 'Vue.js', 'MySQL', 'HTML/CSS', 'UML/Merise'],
+            annee: '2016-2019'
         }
     },
     components: {

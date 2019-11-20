@@ -1,6 +1,6 @@
 <template>
     <div>
-        <case-header :color="color" next-case="/cases/roadtrip" prev-case="/cases/gari">
+        <case-header :color="color" next-case="/cases/roadtrip" prev-case="/cases/rfp-platform">
             <b>Macollec-capsule</b> est un site de gestion de collection de capsule de champagne pour les <b>placomusophiles</b> dont j'ai réalisé <b>le design</b>.
         </case-header>
         <case-intro :roles="roles" :technologies="technologies" :annee="annee">

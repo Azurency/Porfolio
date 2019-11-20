@@ -141,7 +141,7 @@ export default {
     },
     computed: {
         block1 () {
-            return Color(this.color).rotate(20).lighten(0.08).rgb()
+            return Color(this.color).rotate(15).lighten(0.20).desaturate(0.15).rgb()
         },
         block1BackgroundColor () {
             return this.block1.string()
