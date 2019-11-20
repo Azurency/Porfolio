@@ -70,14 +70,14 @@
                     </svg>
                     <template slot="pre">Faites un tour sur</template>
                 </icon-link>
-                <icon-link color="#EE8668" buttonText="Malt.fr" v-scroll-reveal buttonLink="https://www.malt.fr/profile/antoinelassier">
+                <icon-link color="#EE8668" buttonText="Malt" v-scroll-reveal buttonLink="https://www.malt.fr/profile/antoinelassier">
                     <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 93 92">
                         <g fill="none" fill-rule="evenodd">
-                            <path stroke="currentColor" stroke-width="6" d="M34.561 78.975c0 7.844 5.104 12.282 11.45 12.306.016 0-.016 0 0 0 6.324.002 11.54-5.976 11.566-12.306L46.003 67.257 34.561 78.975z"/>
-                            <path stroke="currentColor" stroke-width="6" d="M30.494 12.753a11.432 11.432 0 0 0-8.062-3.546c-3.094-.058-5.99 1.068-8.21 3.192-4.584 4.39-4.742 11.688-.354 16.272l1.718 1.794 24.332.104 3.916-3.882-13.34-13.934zM78.353 62.739l-1.718-1.794-24.332-.104-3.916 3.882 13.34 13.934c4.388 4.58 11.69 4.74 16.272.354 4.582-4.39 4.742-11.688.354-16.272"/>
-                            <path stroke="currentColor" stroke-width="6" d="M79.246 34.335L55.92 57.255l24.742.106h.05c3.056 0 5.932-1.182 8.104-3.334A11.448 11.448 0 0 0 92.22 45.9c.026-6.344-4.974-11.728-12.974-11.566M11.558 34.05h-.054a11.425 11.425 0 0 0-8.098 3.334A11.439 11.439 0 0 0 0 45.508c-.014 3.074.578 11.556 13.16 11.556L36.3 34.156l-24.742-.106z"/>
-                            <path stroke="currentColor" stroke-width="6" d="M78.854 13.239c-4.468-4.506-11.768-4.54-16.274-.068L13.436 61.893c-4.506 4.47-4.538 11.77-.07 16.276 4.468 4.508 11.77 4.542 16.276.07l49.142-48.722c4.508-4.47 4.538-11.772.07-16.278"/>
-                            <path stroke="currentColor" stroke-width="6" d="M58.578 12.305c0-7.844-5.104-12.28-11.45-12.304-.016 0 .016 0 0 0C40.804 0 35.588 5.975 35.562 12.305l11.574 11.718 11.442-11.718z"/>
+                            <path stroke="currentColor" stroke-width="5.5" d="M34.561 78.975c0 7.844 5.104 12.282 11.45 12.306.016 0-.016 0 0 0 6.324.002 11.54-5.976 11.566-12.306L46.003 67.257 34.561 78.975z"/>
+                            <path stroke="currentColor" stroke-width="5.5" d="M30.494 12.753a11.432 11.432 0 0 0-8.062-3.546c-3.094-.058-5.99 1.068-8.21 3.192-4.584 4.39-4.742 11.688-.354 16.272l1.718 1.794 24.332.104 3.916-3.882-13.34-13.934zM78.353 62.739l-1.718-1.794-24.332-.104-3.916 3.882 13.34 13.934c4.388 4.58 11.69 4.74 16.272.354 4.582-4.39 4.742-11.688.354-16.272"/>
+                            <path stroke="currentColor" stroke-width="5.5" d="M79.246 34.335L55.92 57.255l24.742.106h.05c3.056 0 5.932-1.182 8.104-3.334A11.448 11.448 0 0 0 92.22 45.9c.026-6.344-4.974-11.728-12.974-11.566M11.558 34.05h-.054a11.425 11.425 0 0 0-8.098 3.334A11.439 11.439 0 0 0 0 45.508c-.014 3.074.578 11.556 13.16 11.556L36.3 34.156l-24.742-.106z"/>
+                            <path stroke="currentColor" stroke-width="5.5" d="M78.854 13.239c-4.468-4.506-11.768-4.54-16.274-.068L13.436 61.893c-4.506 4.47-4.538 11.77-.07 16.276 4.468 4.508 11.77 4.542 16.276.07l49.142-48.722c4.508-4.47 4.538-11.772.07-16.278"/>
+                            <path stroke="currentColor" stroke-width="5.5" d="M58.578 12.305c0-7.844-5.104-12.28-11.45-12.304-.016 0 .016 0 0 0C40.804 0 35.588 5.975 35.562 12.305l11.574 11.718 11.442-11.718z"/>
                         </g>
                     </svg>
                     <template slot="pre">Proposez moi une mission sur</template>
@@ -184,7 +184,7 @@
                             <ellipse cx="20" cy="18.333" rx="7.273" ry="7.333"/>
                         </g>
                     </svg>
-                    21 472
+                    23 653
                 </stat-block>
                 <stat-block title="Commits" color="#A5E6ED" class="stat-section__item">
                     <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
@@ -195,7 +195,7 @@
                             <circle cx="9" cy="33" r="1" stroke-width="2"/>
                         </g>
                     </svg>
-                    835
+                    1071
                 </stat-block>
                 <stat-block title="Musique" color="#BAEA8A" class="stat-section__item">
                     <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
@@ -204,10 +204,10 @@
                             <polyline points="13.333 31.111 13.333 4.444 40 0 40 26.667"/>
                         </g>
                     </svg>
-                    Halsey
-                    <br>La Femme
-                    <br>MØ, Sia
-                    <br>...
+                    The pirouettes
+                    <br>Bagarre
+                    <br>Muddy Monk
+                    <br>La Femme, Halsey, ...
                 </stat-block>
                 <stat-block title="Séries préférées" color="#E0779F" class="stat-section__item">
                     <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40">
@@ -217,9 +217,9 @@
                         </g>
                     </svg>            
                     Fringe (the observers <img src="~assets/emoji/detective.png" alt="🕵️" class="emoji">)
-                    <br>Sherlock
+                    <br>The Crown
                     <br>Halt & Catch Fire
-                    <br>...
+                    <br>Sherlock
                 </stat-block>
                 <stat-block title="Lignes de code" color="#9DCDF3" class="stat-section__item">
                     <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="36" height="44" viewBox="0 0 36 44">
@@ -229,7 +229,7 @@
                             <path d="M16 32L16 20M10 26L22 26"/>
                         </g>
                     </svg>
-                    1 543 000
+                    2 362 000
                 </stat-block>
             </div>
         </section>
