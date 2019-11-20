@@ -1,6 +1,6 @@
 <template>
     <footer class="footer">
-        <p class="footer__item" v-scroll-reveal>© 2017 Antoine Lassier.</p>
+        <p class="footer__item" v-scroll-reveal>© 2018-2020 Antoine Lassier.</p>
         <p class="footer__item footer__item--grayed" v-scroll-reveal>
             <a href="mailto:antoine.lassier@gmail.com" class="footer_link underline-hover">antoine.lassier@gmail.com</a>
         </p>
